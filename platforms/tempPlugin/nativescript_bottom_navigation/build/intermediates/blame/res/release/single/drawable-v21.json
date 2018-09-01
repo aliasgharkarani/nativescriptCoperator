@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "E:\\CooperSwitch\\CooperSwitch\\platforms\\tempPlugin\\nativescript_bottom_navigation\\build\\intermediates\\res\\merged\\release\\drawable-v21\\item_background.xml",
+        "source": "C:\\Users\\alias\\.gradle\\caches\\transforms-1\\files-1.1\\ahbottomnavigation-2.1.0.aar\\4d7569a050aac9b5b9ad2df0b4d0fb57\\res\\drawable-v21\\item_background.xml"
+    },
+    {
+        "merged": "E:\\CooperSwitch\\CooperSwitch\\platforms\\tempPlugin\\nativescript_bottom_navigation\\build\\intermediates\\res\\merged\\release\\drawable-v21\\avd_show_password.xml",
+        "source": "C:\\Users\\alias\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\0a04f71ba5afb5ce3deeef6e311e9694\\res\\drawable-v21\\avd_show_password.xml"
+    },
+    {
+        "merged": "E:\\CooperSwitch\\CooperSwitch\\platforms\\tempPlugin\\nativescript_bottom_navigation\\build\\intermediates\\res\\merged\\release\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\alias\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\342ab39d0cd21311df7df3531eb82c29\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "E:\\CooperSwitch\\CooperSwitch\\platforms\\tempPlugin\\nativescript_bottom_navigation\\build\\intermediates\\res\\merged\\release\\drawable-v21\\avd_hide_password.xml",
+        "source": "C:\\Users\\alias\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\0a04f71ba5afb5ce3deeef6e311e9694\\res\\drawable-v21\\avd_hide_password.xml"
+    },
+    {
+        "merged": "E:\\CooperSwitch\\CooperSwitch\\platforms\\tempPlugin\\nativescript_bottom_navigation\\build\\intermediates\\res\\merged\\release\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\alias\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\342ab39d0cd21311df7df3531eb82c29\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
+        "merged": "E:\\CooperSwitch\\CooperSwitch\\platforms\\tempPlugin\\nativescript_bottom_navigation\\build\\intermediates\\res\\merged\\release\\drawable-v21\\design_password_eye.xml",
+        "source": "C:\\Users\\alias\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\0a04f71ba5afb5ce3deeef6e311e9694\\res\\drawable-v21\\design_password_eye.xml"
+    },
+    {
+        "merged": "E:\\CooperSwitch\\CooperSwitch\\platforms\\tempPlugin\\nativescript_bottom_navigation\\build\\intermediates\\res\\merged\\release\\drawable-v21\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\alias\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\0a04f71ba5afb5ce3deeef6e311e9694\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "E:\\CooperSwitch\\CooperSwitch\\platforms\\tempPlugin\\nativescript_bottom_navigation\\build\\intermediates\\res\\merged\\release\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\alias\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\342ab39d0cd21311df7df3531eb82c29\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "E:\\CooperSwitch\\CooperSwitch\\platforms\\tempPlugin\\nativescript_bottom_navigation\\build\\intermediates\\res\\merged\\release\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\alias\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\342ab39d0cd21311df7df3531eb82c29\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    }
+]

@@ -1,0 +1,270 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:2:1-46:12
+MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\47582941216073e2209ab326047e4005\AndroidManifest.xml:2:1-24:12
+MERGED from [com.aurelhubert:ahbottomnavigation:2.1.0] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\ahbottomnavigation-2.1.0.aar\4d7569a050aac9b5b9ad2df0b4d0fb57\AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.0-alpha1.aar\3ae8abc1310b430137b35dc8c071fcff\AndroidManifest.xml:17:1-28:12
+MERGED from [com.romandanylyk:pageindicatorview:0.2.0] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\pageindicatorview-0.2.0.aar\042dfcf389a6ca467cd8d7502135db48\AndroidManifest.xml:2:1-12:12
+MERGED from [com.github.andyxialm:ColorDialog:fc1804b35a] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\ColorDialog-fc1804b35a.aar\76f9cc3e5b5bb13dafb9cd7eeb7d23db\AndroidManifest.xml:2:1-17:12
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\c659ec91ec17b4aab60831dfd4352991\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\ca4ed1a193c0cf4763ce93e10bb969d1\AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\b98f043136ec05535481548aaee361f5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\53f329252e78311942bc65d4a764a9f6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\d579a241d904ea43ce559465059fd5d6\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\446d9db7ac5aabcc22e47839b3f551ab\AndroidManifest.xml:17:1-22:12
+MERGED from [:nativescript-optimized-with-inspector:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript-optimized-with-inspector.aar\c090ae127817c1a0a32e495874c7c2f4\AndroidManifest.xml:2:1-11:12
+MERGED from [:nativescript_bottom_navigation:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_bottom_navigation.aar\4dad8c2327ddf849df63bd094f36ab0d\AndroidManifest.xml:2:1-9:12
+MERGED from [:nativescript_camera:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\67f01368fa6beae04479c25ad26d6862\AndroidManifest.xml:2:1-23:12
+MERGED from [:nativescript_fontawesome:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_fontawesome.aar\25177bd39ec26b723d9960e0df3f06e6\AndroidManifest.xml:2:1-9:12
+MERGED from [:nativescript_ng_shadow:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_ng_shadow.aar\540e5aa95aacb4c05a4305231cdacb12\AndroidManifest.xml:2:1-9:12
+MERGED from [:nativescript_rich_textfield:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_rich_textfield.aar\08f73a4ef3f62b6c2d3e3f6802833101\AndroidManifest.xml:2:1-9:12
+MERGED from [:nativescript_ssi_imagepicker:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_ssi_imagepicker.aar\61ebb9ce6c32a2546d94d75804f62799\AndroidManifest.xml:2:1-11:12
+MERGED from [:TNSListView-release:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\TNSListView-release.aar\39e7bcc9b45d5b01270e6565fe740d07\AndroidManifest.xml:2:1-11:12
+MERGED from [:widgets-release:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\60e50a7fc8fa5e2401c79e88ea9d7649\AndroidManifest.xml:2:1-14:12
+MERGED from [:TNSCore-release:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\TNSCore-release.aar\855cacf3919f442953a29b7cff08baa6\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\4bb44219b82a1ecbda78bb762cef55eb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\bc33590f7a69097bc1100a89acbee6ff\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\1afea08e046ed0d1c31cf767fe8fa2fc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\4e795e85d93d51a58c6dd5f72bd30f81\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\271db9d5b2a87d5d45b303884dd6aa8a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\b3d9b61eef08086bd3536a4486c46ace\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\a79b033b9ee3012b8970bb88495babda\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\9adfb5f8e52d54caf861961383b4af27\AndroidManifest.xml:17:1-24:12
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:2:1-46:12
+	package
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:3:2-41
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:5:2-27
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:4:2-25
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml
+supports-screens
+ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:7:2-11:33
+	android:largeScreens
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:10:3-30
+	android:smallScreens
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:8:3-30
+	android:normalScreens
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:9:3-31
+	android:xlargeScreens
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:11:3-31
+uses-sdk
+ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:13:2-15:34
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:13:2-15:34
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:13:2-15:34
+MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\47582941216073e2209ab326047e4005\AndroidManifest.xml:7:5-9:41
+MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\47582941216073e2209ab326047e4005\AndroidManifest.xml:7:5-9:41
+MERGED from [com.aurelhubert:ahbottomnavigation:2.1.0] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\ahbottomnavigation-2.1.0.aar\4d7569a050aac9b5b9ad2df0b4d0fb57\AndroidManifest.xml:7:5-9:41
+MERGED from [com.aurelhubert:ahbottomnavigation:2.1.0] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\ahbottomnavigation-2.1.0.aar\4d7569a050aac9b5b9ad2df0b4d0fb57\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.0-alpha1.aar\3ae8abc1310b430137b35dc8c071fcff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.0-alpha1.aar\3ae8abc1310b430137b35dc8c071fcff\AndroidManifest.xml:20:5-44
+MERGED from [com.romandanylyk:pageindicatorview:0.2.0] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\pageindicatorview-0.2.0.aar\042dfcf389a6ca467cd8d7502135db48\AndroidManifest.xml:8:5-10:41
+MERGED from [com.romandanylyk:pageindicatorview:0.2.0] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\pageindicatorview-0.2.0.aar\042dfcf389a6ca467cd8d7502135db48\AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.andyxialm:ColorDialog:fc1804b35a] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\ColorDialog-fc1804b35a.aar\76f9cc3e5b5bb13dafb9cd7eeb7d23db\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.andyxialm:ColorDialog:fc1804b35a] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\ColorDialog-fc1804b35a.aar\76f9cc3e5b5bb13dafb9cd7eeb7d23db\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\c659ec91ec17b4aab60831dfd4352991\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\c659ec91ec17b4aab60831dfd4352991\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\ca4ed1a193c0cf4763ce93e10bb969d1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\ca4ed1a193c0cf4763ce93e10bb969d1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\b98f043136ec05535481548aaee361f5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\b98f043136ec05535481548aaee361f5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\53f329252e78311942bc65d4a764a9f6\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\53f329252e78311942bc65d4a764a9f6\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\d579a241d904ea43ce559465059fd5d6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\d579a241d904ea43ce559465059fd5d6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\446d9db7ac5aabcc22e47839b3f551ab\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\446d9db7ac5aabcc22e47839b3f551ab\AndroidManifest.xml:20:5-44
+MERGED from [:nativescript-optimized-with-inspector:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript-optimized-with-inspector.aar\c090ae127817c1a0a32e495874c7c2f4\AndroidManifest.xml:7:5-9:41
+MERGED from [:nativescript-optimized-with-inspector:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript-optimized-with-inspector.aar\c090ae127817c1a0a32e495874c7c2f4\AndroidManifest.xml:7:5-9:41
+MERGED from [:nativescript_bottom_navigation:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_bottom_navigation.aar\4dad8c2327ddf849df63bd094f36ab0d\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_bottom_navigation:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_bottom_navigation.aar\4dad8c2327ddf849df63bd094f36ab0d\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_camera:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\67f01368fa6beae04479c25ad26d6862\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_camera:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\67f01368fa6beae04479c25ad26d6862\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_fontawesome:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_fontawesome.aar\25177bd39ec26b723d9960e0df3f06e6\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_fontawesome:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_fontawesome.aar\25177bd39ec26b723d9960e0df3f06e6\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_ng_shadow:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_ng_shadow.aar\540e5aa95aacb4c05a4305231cdacb12\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_ng_shadow:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_ng_shadow.aar\540e5aa95aacb4c05a4305231cdacb12\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_rich_textfield:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_rich_textfield.aar\08f73a4ef3f62b6c2d3e3f6802833101\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_rich_textfield:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_rich_textfield.aar\08f73a4ef3f62b6c2d3e3f6802833101\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_ssi_imagepicker:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_ssi_imagepicker.aar\61ebb9ce6c32a2546d94d75804f62799\AndroidManifest.xml:7:5-47
+MERGED from [:nativescript_ssi_imagepicker:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_ssi_imagepicker.aar\61ebb9ce6c32a2546d94d75804f62799\AndroidManifest.xml:7:5-47
+MERGED from [:TNSListView-release:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\TNSListView-release.aar\39e7bcc9b45d5b01270e6565fe740d07\AndroidManifest.xml:7:5-9:41
+MERGED from [:TNSListView-release:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\TNSListView-release.aar\39e7bcc9b45d5b01270e6565fe740d07\AndroidManifest.xml:7:5-9:41
+MERGED from [:widgets-release:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\60e50a7fc8fa5e2401c79e88ea9d7649\AndroidManifest.xml:7:5-9:41
+MERGED from [:widgets-release:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\60e50a7fc8fa5e2401c79e88ea9d7649\AndroidManifest.xml:7:5-9:41
+MERGED from [:TNSCore-release:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\TNSCore-release.aar\855cacf3919f442953a29b7cff08baa6\AndroidManifest.xml:7:5-9:41
+MERGED from [:TNSCore-release:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\TNSCore-release.aar\855cacf3919f442953a29b7cff08baa6\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\4bb44219b82a1ecbda78bb762cef55eb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\4bb44219b82a1ecbda78bb762cef55eb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\bc33590f7a69097bc1100a89acbee6ff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\bc33590f7a69097bc1100a89acbee6ff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\1afea08e046ed0d1c31cf767fe8fa2fc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\1afea08e046ed0d1c31cf767fe8fa2fc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\4e795e85d93d51a58c6dd5f72bd30f81\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\4e795e85d93d51a58c6dd5f72bd30f81\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\271db9d5b2a87d5d45b303884dd6aa8a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\271db9d5b2a87d5d45b303884dd6aa8a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\b3d9b61eef08086bd3536a4486c46ace\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\b3d9b61eef08086bd3536a4486c46ace\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\a79b033b9ee3012b8970bb88495babda\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\a79b033b9ee3012b8970bb88495babda\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\9adfb5f8e52d54caf861961383b4af27\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\9adfb5f8e52d54caf861961383b4af27\AndroidManifest.xml:20:5-22:41
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:13:2-15:34
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:13:2-15:34
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\c659ec91ec17b4aab60831dfd4352991\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:15:3-32
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:14:3-29
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml
+		MERGED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:14:3-29
+		MERGED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:14:3-29
+		MERGED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:14:3-29
+		MERGED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:14:3-29
+		MERGED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:14:3-29
+		MERGED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:14:3-29
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:17:2-76
+MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\47582941216073e2209ab326047e4005\AndroidManifest.xml:12:5-80
+MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\47582941216073e2209ab326047e4005\AndroidManifest.xml:12:5-80
+MERGED from [:nativescript_ssi_imagepicker:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_ssi_imagepicker.aar\61ebb9ce6c32a2546d94d75804f62799\AndroidManifest.xml:9:5-80
+MERGED from [:nativescript_ssi_imagepicker:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_ssi_imagepicker.aar\61ebb9ce6c32a2546d94d75804f62799\AndroidManifest.xml:9:5-80
+	android:name
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:17:19-74
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:18:2-77
+MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\47582941216073e2209ab326047e4005\AndroidManifest.xml:13:5-81
+MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\47582941216073e2209ab326047e4005\AndroidManifest.xml:13:5-81
+	android:name
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:18:19-75
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:19:2-75
+	android:name
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:19:19-73
+uses-permission#android.permission.INTERNET
+ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:20:2-63
+MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\47582941216073e2209ab326047e4005\AndroidManifest.xml:11:5-67
+MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\47582941216073e2209ab326047e4005\AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:20:19-61
+application
+ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:24:2-45:16
+MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\47582941216073e2209ab326047e4005\AndroidManifest.xml:16:5-22:19
+MERGED from [net.gotev:uploadservice:3.4.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\47582941216073e2209ab326047e4005\AndroidManifest.xml:16:5-22:19
+MERGED from [com.aurelhubert:ahbottomnavigation:2.1.0] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\ahbottomnavigation-2.1.0.aar\4d7569a050aac9b5b9ad2df0b4d0fb57\AndroidManifest.xml:11:5-20
+MERGED from [com.aurelhubert:ahbottomnavigation:2.1.0] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\ahbottomnavigation-2.1.0.aar\4d7569a050aac9b5b9ad2df0b4d0fb57\AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.0-alpha1.aar\3ae8abc1310b430137b35dc8c071fcff\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.0-alpha1.aar\3ae8abc1310b430137b35dc8c071fcff\AndroidManifest.xml:26:5-20
+MERGED from [com.github.andyxialm:ColorDialog:fc1804b35a] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\ColorDialog-fc1804b35a.aar\76f9cc3e5b5bb13dafb9cd7eeb7d23db\AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.andyxialm:ColorDialog:fc1804b35a] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\ColorDialog-fc1804b35a.aar\76f9cc3e5b5bb13dafb9cd7eeb7d23db\AndroidManifest.xml:11:5-15:19
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\c659ec91ec17b4aab60831dfd4352991\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\c659ec91ec17b4aab60831dfd4352991\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\d579a241d904ea43ce559465059fd5d6\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\d579a241d904ea43ce559465059fd5d6\AndroidManifest.xml:26:5-20
+MERGED from [:nativescript_camera:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\67f01368fa6beae04479c25ad26d6862\AndroidManifest.xml:11:5-21:19
+MERGED from [:nativescript_camera:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\67f01368fa6beae04479c25ad26d6862\AndroidManifest.xml:11:5-21:19
+MERGED from [:widgets-release:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\60e50a7fc8fa5e2401c79e88ea9d7649\AndroidManifest.xml:11:5-12:19
+MERGED from [:widgets-release:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\60e50a7fc8fa5e2401c79e88ea9d7649\AndroidManifest.xml:11:5-12:19
+	android:supportsRtl
+		ADDED from [com.github.andyxialm:ColorDialog:fc1804b35a] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\ColorDialog-fc1804b35a.aar\76f9cc3e5b5bb13dafb9cd7eeb7d23db\AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:28:3-35
+	android:icon
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:27:3-32
+	android:allowBackup
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:26:3-29
+	android:theme
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:29:3-34
+	android:name
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:25:3-49
+activity#com.tns.NativeScriptActivity
+ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:31:3-43:14
+	android:label
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:33:4-49
+	android:configChanges
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:34:4-65
+	android:theme
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:35:4-44
+	android:name
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:32:4-47
+meta-data#SET_THEME_ON_LAUNCH
+ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:37:4-87
+	android:resource
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:37:50-84
+	android:name
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:37:15-49
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:39:4-42:20
+action#android.intent.action.MAIN
+ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:40:5-57
+	android:name
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:40:13-54
+category#android.intent.category.LAUNCHER
+ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:41:5-65
+	android:name
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:41:15-62
+activity#com.tns.ErrorReportActivity
+ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:44:3-57
+	android:name
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\android\app\src\main\AndroidManifest.xml:44:13-55
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [net.gotev:uploadservice:3.4.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\47582941216073e2209ab326047e4005\AndroidManifest.xml:14:5-68
+	android:name
+		ADDED from [net.gotev:uploadservice:3.4.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\47582941216073e2209ab326047e4005\AndroidManifest.xml:14:22-65
+service#net.gotev.uploadservice.UploadService
+ADDED from [net.gotev:uploadservice:3.4.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\47582941216073e2209ab326047e4005\AndroidManifest.xml:17:9-21:19
+	android:enabled
+		ADDED from [net.gotev:uploadservice:3.4.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\47582941216073e2209ab326047e4005\AndroidManifest.xml:19:13-35
+	android:exported
+		ADDED from [net.gotev:uploadservice:3.4.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\47582941216073e2209ab326047e4005\AndroidManifest.xml:20:13-37
+	android:name
+		ADDED from [net.gotev:uploadservice:3.4.2] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\uploadservice-3.4.2.aar\47582941216073e2209ab326047e4005\AndroidManifest.xml:18:13-65
+meta-data#android.support.VERSION
+ADDED from [com.android.support:cardview-v7:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.0-alpha1.aar\3ae8abc1310b430137b35dc8c071fcff\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\c659ec91ec17b4aab60831dfd4352991\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\c659ec91ec17b4aab60831dfd4352991\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\ca4ed1a193c0cf4763ce93e10bb969d1\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\ca4ed1a193c0cf4763ce93e10bb969d1\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\d579a241d904ea43ce559465059fd5d6\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\d579a241d904ea43ce559465059fd5d6\AndroidManifest.xml:22:5-24:41
+	android:value
+		ADDED from [com.android.support:cardview-v7:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.0-alpha1.aar\3ae8abc1310b430137b35dc8c071fcff\AndroidManifest.xml:24:9-38
+	android:name
+		ADDED from [com.android.support:cardview-v7:26.0.0-alpha1] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.0-alpha1.aar\3ae8abc1310b430137b35dc8c071fcff\AndroidManifest.xml:23:9-47
+uses-permission#android.permission.CAMERA
+ADDED from [:nativescript_camera:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\67f01368fa6beae04479c25ad26d6862\AndroidManifest.xml:9:5-65
+	android:name
+		ADDED from [:nativescript_camera:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\67f01368fa6beae04479c25ad26d6862\AndroidManifest.xml:9:22-62
+provider#android.support.v4.content.FileProvider
+ADDED from [:nativescript_camera:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\67f01368fa6beae04479c25ad26d6862\AndroidManifest.xml:12:9-20:20
+	android:grantUriPermissions
+		ADDED from [:nativescript_camera:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\67f01368fa6beae04479c25ad26d6862\AndroidManifest.xml:16:13-47
+	android:authorities
+		ADDED from [:nativescript_camera:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\67f01368fa6beae04479c25ad26d6862\AndroidManifest.xml:14:13-60
+	android:exported
+		ADDED from [:nativescript_camera:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\67f01368fa6beae04479c25ad26d6862\AndroidManifest.xml:15:13-37
+	android:name
+		ADDED from [:nativescript_camera:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\67f01368fa6beae04479c25ad26d6862\AndroidManifest.xml:13:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:nativescript_camera:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\67f01368fa6beae04479c25ad26d6862\AndroidManifest.xml:17:13-19:58
+	android:resource
+		ADDED from [:nativescript_camera:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\67f01368fa6beae04479c25ad26d6862\AndroidManifest.xml:19:17-55
+	android:name
+		ADDED from [:nativescript_camera:] C:\Users\alias\.gradle\caches\transforms-1\files-1.1\nativescript_camera.aar\67f01368fa6beae04479c25ad26d6862\AndroidManifest.xml:18:17-67

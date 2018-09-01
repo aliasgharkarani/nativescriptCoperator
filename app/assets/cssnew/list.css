@@ -1,0 +1,15 @@
+.list {
+  border-top-width: 1;
+  border-top-color: rgb(254, 204, 22);
+  padding-bottom: 10;
+}
+.list-item {
+  height: 60;
+  border-bottom-width: 1;
+  border-bottom-color: rgb(254, 204, 22);
+  padding: 0;
+}
+
+.list-item .text {
+  margin: 0;
+}

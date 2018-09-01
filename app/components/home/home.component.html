@@ -1,0 +1,198 @@
+<!-- <ActionBar title="CooperSwitch" android.icon="res://icon" android.iconVisibility="always"></ActionBar> -->
+<ActionBar style="background-color:black">
+
+    <GridLayout rows="*" columns="40,*,70">
+
+
+        <GridLayout col="0">
+            <Label class="fa" [text]="'fa-align-left' | fonticon" horizontalAlignment="left" style="margin-left: 3em;  color:white; font-size:20px"></Label>
+
+        </GridLayout>
+
+        <GridLayout col="1">
+            <Image src="res://home_logo" style="width: 60%;" class="initial-logo"></Image>
+
+        </GridLayout>
+        <GridLayout col="2" [nsRouterLink]="['/mycart']" columns="*,*">
+            <Label col="0" class="fa" [text]="'fa-bell' | fonticon" horizontalAlignment="left" style="  color:white; font-size:20px"></Label>
+            <Label col="1" class="fa" [text]="'fa-search' | fonticon" style=" color:white; font-size:20px"></Label>
+
+        </GridLayout>
+    </GridLayout>
+
+</ActionBar>
+
+
+<StackLayout (touch)="onTouch($event)">
+    <GridLayout rows="*,auto">
+        <ScrollView>
+
+
+            <GridLayout row="0" rows="auto, auto, auto, auto" style="background-color: #EFEFEF;">
+
+                <GridLayout row="0" class="form" style="box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;">
+
+
+                    <CardView class="cardStyle" margin="3" elevation="10" radius="1">
+
+                        <Carousel #carousel height="150"></Carousel>
+
+
+                        <!-- <Image src="~/assets/images/mainshop/Image box.png" stretch="aspectFit"></Image>  -->
+
+                    </CardView>
+
+                </GridLayout>
+
+
+
+
+                <GridLayout marginright="20" marginleft="20" margintop="10" row="1" rows="*, auto, auto">
+
+
+                    <GridLayout row="0" columns="*,*,*">
+
+                        <GridLayout row="0" col="0" class="form">
+
+                            <CardView class="cardStyle" margin="3" elevation="10" radius="5">
+                                <GridLayout rows="*,*">
+
+                                    <Label row="0" class="createdOn text-left" horizontalAlignment="left" text="item.UpdatedDate"></Label>
+                                    <Image row="1" src="~/assets/images/mainshop/Layer 12.png" stretch="aspectFit"></Image>
+
+                                </GridLayout>
+                            </CardView>
+
+                        </GridLayout>
+
+
+
+                        <GridLayout row="0" col="1" class="form">
+
+                            <CardView class="cardStyle" margin="3" elevation="10" radius="5">
+                                <GridLayout rows="*,*">
+
+                                    <Label row="0" class="createdOn text-left" horizontalAlignment="left" text="item.UpdatedDate"></Label>
+                                    <Image row="1" src="~/assets/images/mainshop/Layer 12.png" stretch="aspectFit"></Image>
+
+                                </GridLayout>
+                            </CardView>
+
+                        </GridLayout>
+
+
+                        <GridLayout row="0" col="2" class="form">
+
+                            <CardView class="cardStyle" margin="3" elevation="10" radius="5">
+                                <GridLayout rows="*,auto">
+
+                                    <Label row="0" class="createdOn text-left" horizontalAlignment="left" text="item.UpdatedDate"></Label>
+                                    <Image row="1" src="~/assets/images/mainshop/Rectangle 4.png" stretch="aspectFit" verticalAlignment="stretch"></Image>
+
+                                </GridLayout>
+                            </CardView>
+
+                        </GridLayout>
+
+                    </GridLayout>
+
+
+
+
+                    <GridLayout row="1" rows="30,*" class="form">
+                        <GridLayout row="0" columns="*,auto">
+                            <GridLayout>
+                                <Label row="0" col="0" class="createdOn text-left" horizontalAlignment="left" text="COLLECTIONS" style="margin-top: 7em; font-weight: bold;"></Label>
+                            </GridLayout>
+
+                            <GridLayout>
+                                <Label row="0" col="1" class="createdOn text-right" horizontalAlignment="right" text="SEE ALL" style="margin-top: 7em; color: #FF7800;"></Label>
+                            </GridLayout>
+
+                        </GridLayout>
+                        <GridLayout columns="*" row="1">
+                            <GridLayout col="0">
+                                <CardView class="cardStyle" margin="3" elevation="10" radius="5">
+
+
+
+                                    <Image src="~/assets/images/mainshop/Image box-1.png" stretch="aspectFit"></Image>
+
+                                </CardView>
+                            </GridLayout>
+                            <GridLayout col="0" margintop="40">
+
+
+
+                                <Button horizontalAlignment="right" class=" fa" shadow="2" [text]="'fa-shopping-bag' | fonticon" style="width:50;height:50;color:white;border-radius:100;border-width:2;border-color:#FF7800;background-color:#FF7800; font-size: 30em;"></Button>
+
+                            </GridLayout>
+                        </GridLayout>
+
+                    </GridLayout>
+
+
+                    <GridLayout row="2" rows="*" class="form" columns="*,*">
+
+                        <GridLayout row="0" col="0" rows="*,*">
+
+                            <GridLayout row="0">
+                                <CardView class="cardStyle" margin="3" elevation="10" radius="5">
+
+
+
+                                    <Image src="~/assets/images/mainshop/Image box-3.png" stretch="aspectFit"></Image>
+
+                                </CardView>
+
+                            </GridLayout>
+
+                            <GridLayout row="1">
+                                <CardView class="cardStyle" margin="3" elevation="10" radius="5">
+
+
+
+                                    <Image src="~/assets/images/mainshop/Layer 16.png" stretch="aspectFit"></Image>
+
+                                </CardView>
+
+                            </GridLayout>
+
+
+                        </GridLayout>
+
+                        <GridLayout row="0" col="1">
+                            <CardView class="cardStyle" margin="3" elevation="10" radius="5">
+
+
+
+                                <Image src="~/assets/images/mainshop/Layer 23.png" stretch="aspectFit"></Image>
+
+                            </CardView>
+
+                        </GridLayout>
+
+                    </GridLayout>
+
+                </GridLayout>
+                <!-- <StackLayout class="p-20">
+        <Button text="Success" (tap)="showSuccess()" class="btn btn-primary btn-active"></Button>
+        <Button text="Error" (tap)="showError()" class="btn btn-primary btn-active"></Button>
+        <Button text="Custom Image" (tap)="showCustomImage()" class="btn btn-primary btn-active"></Button>
+    </StackLayout> -->
+
+            </GridLayout>
+        </ScrollView>
+        <GridLayout row="1" rows="*, auto">
+            <StackLayout row="0">
+
+            </StackLayout>
+            <BottomNavigation activeColor="white" inactiveColor="white" backgroundColor="#FF7800" keyLineColor="black" (tabSelected)="onBottomNavigationTabSelected($event)" row="1" style="width: 100%">
+                <BottomNavigationTab title="Home" icon="home"></BottomNavigationTab>
+                <BottomNavigationTab title="Transactions" icon="transaction"></BottomNavigationTab>
+                <BottomNavigationTab title="Shop" icon="shop"></BottomNavigationTab>
+                <BottomNavigationTab title="My Account" icon="user"></BottomNavigationTab>
+            </BottomNavigation>
+        </GridLayout>
+    </GridLayout>
+</StackLayout>

@@ -1,0 +1,26 @@
+
+<GridLayout #background scaleX="1.4" scaleY="1.4" class="background" (loaded)="startBackgroundAnimation(background)"></GridLayout>
+
+
+<ScrollView>
+    <StackLayout margin="0.1" verticalAlignment="center" rows="auto,auto">
+        <GridLayout column="80" row="auto" height="400">
+            <Image row="0" src="res://logo"  class="initial-logo" style="width: 70%;"></Image>
+        </GridLayout>
+      
+          
+        <GridLayout  rows="auto,auto" columns="*,*" >
+             <Button row="0" col="0" [nsRouterLink]="['/login']" horizontalAlignment="left" class="btn btn-secondary " text="LOGIN" ></Button>
+             <Button row="0" col="1" [nsRouterLink]="['/register']" horizontalAlignment="right" class="btn btn-danger " text="REGISTER" ></Button>
+                    
+        </GridLayout> 
+           
+
+    </StackLayout>
+
+    <!-- <StackLayout class="p-20">
+        <Button text="Success" (tap)="showSuccess()" class="btn btn-primary btn-active"></Button>
+        <Button text="Error" (tap)="showError()" class="btn btn-primary btn-active"></Button>
+        <Button text="Custom Image" (tap)="showCustomImage()" class="btn btn-primary btn-active"></Button>
+    </StackLayout> -->
+</ScrollView>

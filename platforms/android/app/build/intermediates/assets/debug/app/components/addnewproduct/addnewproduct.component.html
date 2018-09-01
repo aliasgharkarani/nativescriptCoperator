@@ -1,0 +1,61 @@
+<ActionBar title="" style="background-color:black;">
+    <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" tap="onNavBtnTap"></NavigationButton>
+    <GridLayout col="1">
+        <GridLayout row="0" columns="*,auto,auto">
+
+            <GridLayout col="1">
+                <Label class="fa" [text]="'fa-search' | fonticon" horizontalAlignment="right" style=" margin-top:30px; margin-bottom:3px; margin-right:35px; color:white; font-size:20px"></Label>
+
+            </GridLayout>
+            <GridLayout col="2">
+                <Label class="fa" [text]="'fa-bell' | fonticon" horizontalAlignment="right" style=" margin-top:30px; margin-bottom:3px; margin-right:35px; color:white; font-size:20px"></Label>
+
+            </GridLayout>
+        </GridLayout>
+    </GridLayout>
+</ActionBar>
+
+
+<GridLayout #background scaleX="1.0" scaleY="1.0" class="background"></GridLayout>
+
+<ScrollView>
+    <StackLayout margin="15" verticalAlignment="top">
+        <StackLayout class="form" padding="15">
+
+            <Label text="Add New Product" fontSize="20" verticalAlignment="bottom"></Label>
+
+            <GridLayout #updateBio columns="auto, *" rows="20, auto, auto, auto, auto, auto, auto, auto " class="page">
+
+
+                <Label text="Product Name:" row="1" col="0" fontSize="18" verticalAlignment="bottom"></Label>
+                <TextField hint="" row="1" col="1">
+                </TextField>
+
+                <Label text="Product Description:" row="2" col="0" fontSize="18" verticalAlignment="bottom"></Label>
+                <TextField hint="" row="2" col="1"></TextField>
+
+                <Label text="Price(N):" row="3" col="0" fontSize="18" verticalAlignment="bottom"></Label>
+                <TextField hint="" row="3" col="1">
+                </TextField>
+
+                <Label text="Quantity:" row="4" col="0" fontSize="18" verticalAlignment="bottom"></Label>
+                <TextField hint="" row="4" col="1"></TextField>
+
+                <Label text="upload image:" row="5" col="0" fontSize="18" verticalAlignment="bottom"></Label>
+
+
+                <Label text="location:" row="6" col="0" fontSize="18" verticalAlignment="bottom"></Label>
+                <TextField hint="" row="6" col="1"></TextField>
+                <TextField hint="" row="7"></TextField>
+                <TextField hint="" row="7"></TextField>
+
+
+
+
+            </GridLayout>
+
+            <Button class="btn btn-primary" text="Add" (tap)="addproduct()"></Button>
+        </StackLayout>
+    </StackLayout>
+
+</ScrollView>

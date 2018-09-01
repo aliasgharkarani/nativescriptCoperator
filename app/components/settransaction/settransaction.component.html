@@ -1,0 +1,81 @@
+<!-- <ActionBar style="background-color:black">
+
+
+    <NavigationButton text="Go Back" col="0" android.systemIcon="ic_menu_back" tap="onNavBtnTap" style="font-size: 12px;"></NavigationButton>
+
+</ActionBar> -->
+
+<!-- <ActionBar title="CooperSwitch" android.icon="res://icon" android.iconVisibility="always"></ActionBar> -->
+
+<GridLayout #background scaleX="1.4" scaleY="1.4" class="background" (loaded)="startBackgroundAnimation(background)"></GridLayout>
+<GridLayout col="1" (tap)="navigateBack()">
+    <Label class="fa" [text]="'fa-arrow-left' | fonticon" horizontalAlignment="left" style=" margin-top:30px; margin-bottom:3px; margin-left:50px; color:white; font-size:20px"></Label>
+
+</GridLayout>
+
+<ScrollView>
+
+
+
+    <StackLayout verticalAlignment="center">
+
+
+
+
+
+
+
+
+        <GridLayout margin="0.1" rows="auto,auto,auto">
+            <GridLayout row="0">
+                <Image src="res://unlock" stretch="none" horizontalAlignment="center" class="initial-logo"></Image>
+            </GridLayout>
+
+            <GridLayout row="1" margintop="30" rows="25, 90">
+                <Label row="0" text="Set Transaction Pin" class="setPin" horizontalAlignment="center" textWrap="true" style="color: white; font-size: 18;  "></Label>
+                <Label row="1" class="secure text-center" text="Secure your app by setting up a 4 digit secure transaction pin" horizontalAlignment="center" textWrap="true" style="color: white; font-size: 15;"></Label>
+            </GridLayout>
+
+            <GridLayout row="2" rows="auto,auto,auto" verticalAlignment="center" class="form" paddingright="50" paddingleft="50">
+
+
+                <GridLayout row="0" rows="auto">
+
+                    <!-- <Label text="Enter Cooper ID" class="label font-weight-bold m-b-5"></Label>
+                <Label class="fa" [text]="'fa-sign-in' | fonticon"></Label> -->
+                    <GridLayout row="0" columns="*" class="input-field">
+
+
+                        <TextField col="1" secure="true" keyboardType="number" hint="*          *           *           *" class="input border-bottom text-center" [(ngModel)]="pin"></TextField>
+                    </GridLayout>
+
+
+                </GridLayout>
+
+                <GridLayout row="1" columns="*" margintop="20">
+                    <Button col="1" class="btn btn-primary w-full loginbutton" text="CONFIRM PIN" (tap)="next()"></Button>
+                </GridLayout>
+
+            </GridLayout>
+            <GridLayout row="2" class="form" padding="15">
+
+
+
+
+            </GridLayout>
+
+        </GridLayout>
+
+
+
+        <!-- <StackLayout class="p-20">
+        <Button text="Success" (tap)="showSuccess()" class="btn btn-primary btn-active"></Button>
+        <Button text="Error" (tap)="showError()" class="btn btn-primary btn-active"></Button>
+        <Button text="Custom Image" (tap)="showCustomImage()" class="btn btn-primary btn-active"></Button>
+    </StackLayout> -->
+
+
+    </StackLayout>
+
+
+</ScrollView>

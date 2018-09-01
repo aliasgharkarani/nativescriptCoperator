@@ -1,0 +1,21 @@
+.geomanist {
+  font-family: "Geomanist-Regular", "Geomanist";
+}
+
+.geomanist-bold {
+  font-family: "Geomanist-Bold", "Geomanist Bold";
+}
+
+.geomanist-ultra {
+  font-family: "Geomanist-Ultra", "Geomanist Ultra";
+  font-size: 50;
+  text-align: center;
+  color: rgb(26, 60, 138);
+}
+
+.geomanist-ultra-small {
+  font-family: "Geomanist-Ultra", "Geomanist Ultra";
+  font-size: 24;
+  color: rgb(26, 60, 138);
+  margin-bottom: 10;
+}

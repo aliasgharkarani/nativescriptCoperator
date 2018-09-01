@@ -1,0 +1,68 @@
+{
+  "_from": "nativescript-background-http",
+  "_id": "nativescript-background-http@3.2.5",
+  "_inBundle": false,
+  "_integrity": "sha512-Ll0raoQ9NsRllB4+wCYo2qV3nlmRvKPVKsSWFHoxEt80CSR9uLO4maQ9nXcrG2Ty05FDhKECU1Aeztg1BEijGQ==",
+  "_location": "/nativescript-background-http",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "nativescript-background-http",
+    "name": "nativescript-background-http",
+    "escapedName": "nativescript-background-http",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-background-http/-/nativescript-background-http-3.2.5.tgz",
+  "_shasum": "55d1cc7d5db6ac571c8781c244f3b4d31e4e8c52",
+  "_spec": "nativescript-background-http",
+  "_where": "C:\\Cooper\\CooperSwitch",
+  "author": {
+    "name": "NativeScript Team"
+  },
+  "bugs": {
+    "url": "https://github.com/NativeScript/nativescript-background-http/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "The iOS API is implemented in JavaScript.",
+  "devDependencies": {
+    "tns-core-modules": "^3.4.0",
+    "tns-platform-declarations": "^3.4.0",
+    "typescript": "~2.7.1"
+  },
+  "homepage": "http://nativescript.github.io/nativescript-background-http/",
+  "keywords": [
+    "background",
+    "http",
+    "upload",
+    "download",
+    "NativeScript"
+  ],
+  "license": "Apache-2.0",
+  "main": "background-http",
+  "name": "nativescript-background-http",
+  "nativescript": {
+    "platforms": {
+      "android": "3.0.0",
+      "ios": "3.0.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NativeScript/nativescript-background-http.git"
+  },
+  "scripts": {
+    "build": "npm i && tsc",
+    "prepack": "tsc"
+  },
+  "typings": "index.d.ts",
+  "url": "https://github.com/NativeScript/nativescript-background-http/issues",
+  "version": "3.2.5"
+}

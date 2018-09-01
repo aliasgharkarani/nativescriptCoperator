@@ -1,0 +1,31 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_bottom_navigation\src\main\AndroidManifest.xml:2:1-129
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_bottom_navigation\src\main\AndroidManifest.xml:2:1-129
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_bottom_navigation\src\main\AndroidManifest.xml:2:1-129
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_bottom_navigation\src\main\AndroidManifest.xml:2:1-129
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_bottom_navigation\src\main\AndroidManifest.xml:2:1-129
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_bottom_navigation\src\main\AndroidManifest.xml:2:1-129
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_bottom_navigation\src\main\AndroidManifest.xml:2:1-129
+	package
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_bottom_navigation\src\main\AndroidManifest.xml:2:70-127
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_bottom_navigation\src\main\AndroidManifest.xml
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_bottom_navigation\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_bottom_navigation\src\main\AndroidManifest.xml
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_bottom_navigation\src\main\AndroidManifest.xml:2:1-129
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_bottom_navigation\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_bottom_navigation\src\main\AndroidManifest.xml
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_bottom_navigation\src\main\AndroidManifest.xml:2:1-129
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_bottom_navigation\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_bottom_navigation\src\main\AndroidManifest.xml:2:11-69
+uses-sdk
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_bottom_navigation\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_bottom_navigation\src\main\AndroidManifest.xml
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_bottom_navigation\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_bottom_navigation\src\main\AndroidManifest.xml
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_bottom_navigation\src\main\AndroidManifest.xml
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_bottom_navigation\src\main\AndroidManifest.xml

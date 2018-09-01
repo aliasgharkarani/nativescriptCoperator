@@ -1,0 +1,90 @@
+<!-- <ActionBar title="CooperSwitch" android.icon="res://icon" android.iconVisibility="always"></ActionBar> -->
+<ActionBar style="background-color:black">
+
+
+    <NavigationButton text="Go Back" col="0" android.systemIcon="ic_menu_back" (tap)="navigateBack()" style="font-size: 12px;"></NavigationButton>
+
+</ActionBar>
+<GridLayout #background scaleX="1.4" scaleY="1.4" class="background" (loaded)="startBackgroundAnimation(background)"></GridLayout>
+
+
+<StackLayout>
+
+
+
+
+
+
+
+    <GridLayout margin="0.1" rows="180,auto,auto">
+
+        <GridLayout row="0" columns="160,10,*" rows="*" margintop="50" paddingright="30" paddingleft="30">
+            <Label row="0" col="0" [nsRouterLink]="['/register']" marginright="15" text="Register as a Cooperator" horizontalAlignment="left" textWrap="true" style="color: white; font-size: 13em; "></Label>
+            <Label row="0" col="1" text="|" horizontalAlignment="center" textWrap="true" style="color:#851212; font-size: 15;"></Label>
+            <Label row="0" col="2" [nsRouterLink]="['/vendor']" text="Register as a Vendor" horizontalAlignment="right" textWrap="true" style="color: #ff9000; font-size: 13em;"></Label>
+
+
+        </GridLayout>
+
+
+        <GridLayout row="1" rows="auto,auto,auto" class="form" paddingright="30" paddingleft="30">
+
+
+            <GridLayout row="0" rows="auto,auto">
+
+                <!-- <Label text="Enter Cooper ID" class="label font-weight-bold m-b-5"></Label>
+                <Label class="fa" [text]="'fa-sign-in' | fonticon"></Label> -->
+                <GridLayout row="0" columns="40,*" class="input-field">
+                    <Image col="0" src="res://cooperative" class="initial-logo" marginright="20" horizontalAlignment="left" style=" color:white; font-size:20px"></Image>
+
+                    <TextField col="1" hint="Enter Business Name" class="input border-bottom" [(ngModel)]="businessName"></TextField>
+                </GridLayout>
+
+
+
+                <GridLayout row="1" columns="40,*" class="input-field">
+
+                    <Image col="0" src="res://email" class="initial-logo" marginright="20" horizontalAlignment="left" style=" color:white; font-size:20px"></Image>
+
+                    <TextField col="1" hint="Enter Email Address" class="input border-bottom" [(ngModel)]="businessEmail"></TextField>
+                </GridLayout>
+
+
+
+            </GridLayout>
+
+            <GridLayout row="1" columns="40,*" margintop="20">
+                <Button col="1" class="btn btn-primary w-full loginbutton" text="REGISTER" (tap)="registerVendor()"></Button>
+            </GridLayout>
+
+
+            <GridLayout row="2" rows="*" columns="40,*,*" style="margin-top:20px;">
+                <Label row="0" col="1" text="Already Have Account?" horizontalAlignment="left" textWrap="true" style="color:white; font-size: 15;"></Label>
+                <Label row="1" col="2" [nsRouterLink]="['/login']" text="Login Here" horizontalAlignment="right" textWrap="true" style="color:#ff9000; font-size: 15;"></Label>
+
+
+            </GridLayout>
+
+
+
+
+        </GridLayout>
+        <GridLayout row="2" class="form" padding="15">
+
+
+
+
+        </GridLayout>
+
+    </GridLayout>
+
+
+
+    <!-- <StackLayout class="p-20">
+        <Button text="Success" (tap)="showSuccess()" class="btn btn-primary btn-active"></Button>
+        <Button text="Error" (tap)="showError()" class="btn btn-primary btn-active"></Button>
+        <Button text="Custom Image" (tap)="showCustomImage()" class="btn btn-primary btn-active"></Button>
+    </StackLayout> -->
+
+
+</StackLayout>

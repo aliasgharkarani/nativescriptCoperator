@@ -1,0 +1,65 @@
+{
+	"nativescript-background-http": {
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-background-http\\platforms\\android\\include.gradle": "fe6678eacb78b74909dc13be7863a2e62ce9b06b"
+	},
+	"nativescript-bottom-navigation": {
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-bottom-navigation\\platforms\\android\\include.gradle": "9bb9a75db12b091179f48621bfda8f4d10ee074c",
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-bottom-navigation\\platforms\\android\\AndroidManifest.xml": "a49c6297b29f6fca5b1b61650dae089ff2181ba0",
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-bottom-navigation\\platforms\\android\\README.md": "45f2f63427be0a461a7e2dfd5ff0ad5bab64068f"
+	},
+	"nativescript-bottombar": {
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-bottombar\\platforms\\android\\include.gradle": "ff8591e4a406958fda120cf6dfa8a43a3b9ee779"
+	},
+	"nativescript-camera": {
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-camera\\platforms\\android\\include.gradle": "3b224fc93af3e858d204fe68c65871f0d0587594",
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-camera\\platforms\\android\\nativescript_camera.aar": "cd1b1fa3acf5d31146353f6127fdea77cc64df61"
+	},
+	"nativescript-cardview": {
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-cardview\\platforms\\android\\include.gradle": "43c459659c6cfe153e03d237153f1496855e9ec0"
+	},
+	"nativescript-carousel": {
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-carousel\\platforms\\android\\include.gradle": "f8ef8b450a020476125ba6db1a33ebed674c9a0d"
+	},
+	"nativescript-fancyalert": {
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-fancyalert\\platforms\\android\\include.gradle": "079345a85b233a48237a723c709dc54353adaa62"
+	},
+	"nativescript-floatingactionbutton": {
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-floatingactionbutton\\platforms\\android\\include.gradle": "2936aacf96fc89fcdccf0d99261516fa8bd67950"
+	},
+	"nativescript-fontawesome": {
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-fontawesome\\platforms\\android\\AndroidManifest.xml": "a49c6297b29f6fca5b1b61650dae089ff2181ba0",
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-fontawesome\\platforms\\android\\include.gradle": "f1091b6acf29316e58365d39dd9134db9ec18bd4",
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-fontawesome\\platforms\\android\\README.md": "45f2f63427be0a461a7e2dfd5ff0ad5bab64068f"
+	},
+	"nativescript-grid-view": {
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-grid-view\\platforms\\android\\include.gradle": "e2b9142e5d71c298c343bc7b324a5e08a5aea905"
+	},
+	"nativescript-ng-shadow": {
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-ng-shadow\\platforms\\android\\README.md": "45f2f63427be0a461a7e2dfd5ff0ad5bab64068f",
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-ng-shadow\\platforms\\android\\include.gradle": "1822b66b1a8d68811e5bdbaba0e69031bb84bb49",
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-ng-shadow\\platforms\\android\\AndroidManifest.xml": "a49c6297b29f6fca5b1b61650dae089ff2181ba0"
+	},
+	"nativescript-rich-textfield": {
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-rich-textfield\\platforms\\android\\README.md": "0bc0739d397c2102751ff1350bd38db7128a03f2",
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-rich-textfield\\platforms\\android\\AndroidManifest.xml": "b8ee0e4647262184211e77a5ff8202487e211e7e",
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-rich-textfield\\platforms\\android\\include.gradle": "57220c774f3e8f020093e5fda23b1d0956fd843f"
+	},
+	"nativescript-snackbar": {
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-snackbar\\platforms\\android\\include.gradle": "b52dc31a7cb7b28268d17250392585c6e3ecd9eb"
+	},
+	"nativescript-ssi-imagepicker": {
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-ssi-imagepicker\\platforms\\android\\AndroidManifest.xml": "324de7ee58b6844e216957411f5d254245473916",
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-ssi-imagepicker\\platforms\\android\\include.gradle": "607e93b157dbf9f40927829026c9e945a4fe320a",
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-ssi-imagepicker\\platforms\\android\\README.md": "45f2f63427be0a461a7e2dfd5ff0ad5bab64068f"
+	},
+	"nativescript-ui-listview": {
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-ui-listview\\platforms\\android\\include.gradle": "6de828da977bf83e1e659e8c9b1c5a299a8e1d41",
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-ui-listview\\platforms\\android\\TNSListView-release.aar": "4f7bdd26de57c79d609170d46dc0a3d13058b860"
+	},
+	"tns-core-modules-widgets": {
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\tns-core-modules-widgets\\platforms\\android\\widgets-release.aar": "6e7dcdb4c48759bcdd69dc02a5f4bc7b068fa181"
+	},
+	"nativescript-ui-core": {
+		"E:\\CooperSwitch\\CooperSwitch\\node_modules\\nativescript-ui-core\\platforms\\android\\TNSCore-release.aar": "f306b1912bd85deb6c445f2b8598222da37fa63f"
+	}
+}

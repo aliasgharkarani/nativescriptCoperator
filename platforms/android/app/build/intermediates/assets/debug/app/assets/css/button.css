@@ -1,0 +1,34 @@
+.button {
+  font-weight: bold;
+  font-size: 16;
+  font-family: "Geomanist-Regular", "Geomanist";
+  text-align: center;
+  margin: 10 0 10 0;
+}
+
+.button-primary {
+  border-radius: 5;
+  width: 80%;
+  padding: 10 0 10 0;
+  background-color: rgb(254, 204, 22);
+  border-color: rgb(33, 61, 133);
+  color: rgb(33, 61, 133);
+  border-width: 3;
+}
+
+.button-rounded {
+  width: 110;
+  height: 110;
+  border-radius: 55;
+  border-width: 5;
+  background-color: rgb(254, 204, 22);
+  border-color: rgb(33, 61, 133);
+  color: rgb(33, 61, 133);
+}
+
+.button-small {
+  width: 80;
+  height: 80;
+  border-radius: 40;
+  vertical-align: middle;
+}

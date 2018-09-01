@@ -1,0 +1,129 @@
+<ActionBar style="background-color: #16222a;border-width: 1;
+border-color: transparent;">
+    <NavigationButton text="Go Back" col="0" android.systemIcon="ic_menu_back" (tap)="navigateBack()"></NavigationButton>
+
+    <GridLayout row="0" columns="*,auto,auto">
+
+        <GridLayout col="1">
+            <Label class="fa" [text]="'fa-bell' | fonticon" horizontalAlignment="right" style=" margin-top:30px; margin-bottom:3px; margin-right:35px; color:white; font-size:20px"></Label>
+
+        </GridLayout>
+        <GridLayout col="2">
+            <Label class="fa" [text]="'fa-cart-plus' | fonticon" horizontalAlignment="right" style=" margin-top:30px; margin-bottom:3px; margin-right:35px; color:white; font-size:20px"></Label>
+
+        </GridLayout>
+    </GridLayout>
+</ActionBar>
+
+
+<StackLayout (touch)="onTouch($event)">
+
+
+
+    <GridLayout rows="*,auto">
+
+
+        <GridLayout row="0">
+            <scrollview>
+
+                <GridLayout rows="auto,auto">
+
+                    <GridLayout row="0" rows="auto,auto,auto" style="background-color: #16222a">
+                        <GridLayout row="0">
+
+                            <div *ngIf="hasImage; then image else noImage"></div>
+
+                            <ng-template #noImage>
+                                <Image row="0" class="avatar avatar--largeCircle" src="~/assets/images/user.png" style="border-radius: 110%;width: 150;height: 150;background-repeat: no-repeat;background-size: contain"></Image>
+                            </ng-template>
+                            <ng-template #image>
+                                <Image row="0" class="avatar avatar--largeCircle" src="data:image/png;base64,{{ loginImage64}}" style="border-radius: 110%;width: 150;height: 150;background-repeat: no-repeat;background-size: contain"></Image>
+                            </ng-template>
+
+                        </GridLayout>
+
+                        <GridLayout row="1">
+                            <label text="{{currentUser.firstName }} {{currentUser.lastName }}" class="text-center set-pin" textWrap="true" style=" margin-bottom:3px;color:white; font-weight:bold"></label>
+                        </GridLayout>
+                        <GridLayout row="2">
+                            <label text="Cooper ID: {{currentUser.cooperId}}" class="text-center set-pin" style=" margin-bottom:3px;color:white; font-weight:bold"></label>
+
+                        </GridLayout>
+
+
+                    </GridLayout>
+
+                    <GridLayout row="1">
+
+                        <StackLayout class="list-group" rows="auto,auto,auto,auto,auto,auto,auto,auto,auto">
+                            <GridLayout row="0" style="padding-left:30px;padding-top:20px" columns="auto,*" style="background-color: #e6e6e6;" class="list-group-item">
+                                <Label class="fa" [text]="'fa-cogs' | fonticon" col="0" horizontalAlignment="center" style=" margin-top:4px; padding-right:10px;  color:#000000;font-size:15px; "></Label>
+                                <Label col="1" style="padding-left:10px;" text="Account Setting" android:class="label-item" textWrap="true"></Label>
+                            </GridLayout>
+
+
+                            <GridLayout row="1" [nsRouterLink]="['/profile']" style="padding-left:30px;padding-top:20px" columns="auto,*" style="background-color: #fcfafa;" class="list-group-item">
+                                <Label class="fa" [text]="'fa-user' | fonticon" col="0" horizontalAlignment="center" style=" margin-top:4px; padding-right:10px;  color:#000000;font-size:15px; "></Label>
+                                <Label col="1" style="padding-left:10px;" text="View Profile" android:class="label-item" textWrap="true"></Label>
+                            </GridLayout>
+
+                            <GridLayout row="2" style="padding-left:30px;padding-top:20px" columns="auto,*" style="background-color: #e6e6e6;" class="list-group-item">
+                                <Label class="fa" [text]="'fa-key' | fonticon" col="0" horizontalAlignment="center" style=" margin-top:4px; padding-right:10px;  color:#000000;font-size:15px; "></Label>
+                                <Label col="1" style="padding-left:10px;" text="Manage Transaction Pin" android:class="label-item" textWrap="true"></Label>
+                            </GridLayout>
+
+                            <GridLayout row="3" style="padding-left:30px;padding-top:20px" columns="auto,*" style="background-color:#fcfafa;" class="list-group-item">
+                                <Label class="fa" [text]="'fa-unlock-alt' | fonticon" col="0" horizontalAlignment="center" style=" margin-top:4px; padding-right:10px;  color:#000000;font-size:15px; "></Label>
+                                <Label col="1" style="padding-left:10px;" text="Change Password" android:class="label-item" textWrap="true"></Label>
+                            </GridLayout>
+
+                            <GridLayout row="4" style="padding-left:30px;padding-top:20px" columns="auto,*" style="background-color: #e6e6e6;" class="list-group-item">
+                                <Label class="fa" [text]="'fa-tasks' | fonticon" col="0" horizontalAlignment="center" style=" margin-top:4px; padding-right:10px;  color:#000000;font-size:15px; "></Label>
+                                <Label col="1" style="padding-left:10px;" text="Push Notification" android:class="label-item" textWrap="true"></Label>
+                            </GridLayout>
+
+                            <GridLayout row="5" style="padding-left:30px;padding-top:20px" columns="auto,*" style="background-color:#fcfafa;" class="list-group-item">
+                                <Label class="fa" [text]="'fa-plus' | fonticon" col="0" horizontalAlignment="center" style=" margin-top:4px; padding-right:10px;  color:#000000;font-size:15px; "></Label>
+                                <Label col="1" style="padding-left:10px;" text="Add New Cooperative" [nsRouterLink]="['/addcooperative']" android:class="label-item" textWrap="true"></Label>
+                            </GridLayout>
+
+                            <GridLayout row="6" style="padding-left:30px;padding-top:20px" columns="auto,* " style="background-color: #e6e6e6;" class="list-group-item">
+                                <Label class="fa" [text]="'fa-exchange' | fonticon" col="0" horizontalAlignment="center" style=" margin-top:4px; padding-right:10px;  color:#000000;font-size:15px; "></Label>
+                                <Label col="1" style="padding-left:10px;" text="Request Limit Increase" android:class="label-item" textWrap="true"></Label>
+                            </GridLayout>
+                            <GridLayout row="7" style="padding-left:30px;padding-top:20px" columns="auto,*" style="background-color:#fcfafa;" class="list-group-item">
+                                <Label class="fa" [text]="'fa-check-circle-o' | fonticon" col="0" horizontalAlignment="center" style=" margin-top:4px; padding-right:10px;  color:#000000;font-size:15px; "></Label>
+                                <Label col="1" style="padding-left:10px;" text="Version" android:class="label-item" textWrap="true"></Label>
+                            </GridLayout>
+
+                            <GridLayout row="8" (tap)="logout()" style="padding-left:30px;padding-top:20px" columns="auto,* " style="background-color: #e6e6e6;" class="list-group-item">
+                                <Label class="fa" [text]="'fa-sign-out-alt' | fonticon" col="0" horizontalAlignment="center" style=" margin-top:4px; padding-right:10px;  color:#000000;font-size:15px; "></Label>
+                                <Label col="1" style="padding-left:10px;" text="LogOut" android:class="label-item" textWrap="true"></Label>
+                            </GridLayout>
+
+                        </StackLayout>
+
+                    </GridLayout>
+
+                </GridLayout>
+
+            </scrollview>
+        </GridLayout>
+        <GridLayout row="1">
+            <GridLayout rows="*">
+
+                <BottomNavigation #bottomNavigation activeColor="goldenrod" inactiveColor="white" backgroundColor="black" keyLineColor="black" (loaded)="bottomNavigationLoaded($event)" (tabSelected)="onBottomNavigationTabSelected($event)" row="0" style="font-size: 14px">
+                    <BottomNavigationTab title="Home" icon="ic_home_black_24dp"></BottomNavigationTab>
+                    <BottomNavigationTab title="Approve/Dismiss" icon="ic_paperplane"></BottomNavigationTab>
+                    <BottomNavigationTab title="Shop" icon="ic_calendar"></BottomNavigationTab>
+                    <BottomNavigationTab title="Account" icon="ic_collaborator"></BottomNavigationTab>
+
+                </BottomNavigation>
+            </GridLayout>
+        </GridLayout>
+
+    </GridLayout>
+
+
+
+</StackLayout>

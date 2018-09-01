@@ -1,0 +1,61 @@
+ .border-bottom {
+    border-bottom-width: 1;
+    border-bottom-color: #ffbd67;
+    margin-bottom: 10;
+    padding-bottom: 8;
+    color: white;
+
+  }
+
+  .btn-primary{
+  background-color:#AFC901;
+  height: 50em;
+  font-size: 16px;
+  font-family: "Mont";
+   font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+
+
+TextField{
+  color: black;
+  font-size: 13px;
+    placeholder-color: black;
+}
+
+.tapone{
+
+  margin-top: -35em;
+}
+
+   .drop-down {
+    border-bottom-width: 1;
+    border-bottom-color: #ffbd67;
+    padding-bottom: 5;
+    color: white;
+
+  }
+
+  DropDown{
+  color: white;
+    placeholder-color: rgb(71, 70, 70);
+    text-align: left;
+    text-decoration-style: none;
+
+    
+}
+
+TextField{
+  
+    placeholder-color: rgb(71, 70, 70);
+    font-size: 3em;
+}
+
+.arrow{
+  background-image: url("res://arrow");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

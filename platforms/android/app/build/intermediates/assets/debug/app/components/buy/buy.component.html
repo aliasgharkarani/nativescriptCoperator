@@ -1,0 +1,156 @@
+<ActionBar style="background-color:#16222a">
+
+
+    <NavigationButton text="Go Back" col="0" android.systemIcon="ic_menu_back" (tap)="navigateBack()"></NavigationButton>
+
+    <GridLayout row="0" columns="*,auto,auto">
+
+        <GridLayout col="1">
+            <Label class="fa" [text]="'fa-bell' | fonticon" horizontalAlignment="right" style=" margin-top:30px; margin-bottom:3px; margin-right:35px; color:white; font-size:20px"></Label>
+
+        </GridLayout>
+        <GridLayout col="2" [nsRouterLink]="['/mycart']">
+            <Label class="fa" [text]="'fa-cart-plus' | fonticon" horizontalAlignment="right" style=" margin-top:30px; margin-bottom:3px; margin-right:35px; color:white; font-size:20px"></Label>
+
+        </GridLayout>
+    </GridLayout>
+</ActionBar>
+<GridLayout #background scaleX="1.4" scaleY="1.4" class="background" (loaded)="startBackgroundAnimation(background)"></GridLayout>
+
+
+<ScrollView>
+
+    <StackLayout class="addnew" orientation="vertical" verticalAlignment="top" (touch)="onTouch($event)">
+
+        <!-- <GridLayout [carousel]="images" carouselLabelOverlay="true" carouselSpeed="2000">
+
+
+        </GridLayout> -->
+
+        <GridLayout style="height:400px">
+
+            <ScrollView orientation="horizontal">
+                <StackLayout orientation="horizontal" class="scroll-menu">
+                    <StackLayout class="scroll-pane">
+                        <Image src="{{productImageUrl}}{{product.productImage}}" width="100%" height="400" stretch="aspectFill"></Image>
+                    </StackLayout>
+                    <StackLayout class="scroll-pane">
+                        <Image src="{{productImageUrl}}{{product.productRightImage}}" width="100%" height="400" stretch="aspectFill"></Image>
+                    </StackLayout>
+                    <StackLayout class="scroll-pane">
+                        <Image src="{{productImageUrl}}{{product.productLeftImage}}" width="100%" height="400" stretch="aspectFill"></Image>
+                    </StackLayout>
+                    <StackLayout class="scroll-pane">
+                        <Image src="{{productImageUrl}}{{product.productBackImage}}" width="100%" height="400" stretch="aspectFill"></Image>
+
+                    </StackLayout>
+
+                </StackLayout>
+            </ScrollView>
+
+
+
+            <!-- <slides loop="true" [pageIndicators]="true">
+                <slide class="slide-1">
+                    <Image src="{{productImageUrl}}{{product.productImage}}"></Image>
+
+                </slide>
+                <slide class="slide-2">
+                    <Image src="{{productImageUrl}}{{product.productRightImage}}"></Image>
+                </slide>
+                <slide class="slide-3">
+                    <Image src="{{productImageUrl}}{{product.productLeftImage}}"></Image>
+                </slide>
+            </slides> -->
+
+        </GridLayout>
+
+
+        <StackLayout class="layout-style">
+            <Label textWrap="true" marginTop="10" [text]="product.productName" marginLeft="20" class="h3 description-label" style="font-weight:bold"></Label>
+            <StackLayout>
+
+                <StackLayout marginTop="15">
+
+                    <StackLayout marginLeft="20" marginRight="20" rows="auto,auto">
+
+                        <Label textWrap="true" row="0" [text]="product.productBriefDesc" class="h3 description-label"></Label>
+                        <Label textWrap="true" row="1" marginTop="10" [text]="product.price | currency:'NGN':'symbol-narrow':'4.2-2'" class="h3 description-label"></Label>
+
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+
+        <StackLayout>
+
+            <GridLayout margin="15" marginBottom="5" columns="auto,auto,auto">
+
+                <GridLayout col="0" horizontalAlignment="right" rows="auto,auto" style="margin-right: 20%; padding: 15px">
+                    <Label row="0" textWrap="true" text="Rate " class="h3 description-label"></Label>
+                    <Label row="1" textWrap="true" text="" class="h2 description-label"></Label>
+                </GridLayout>
+
+                <GridLayout col="1" columns="auto,auto" style=" padding: 15px">
+                    <GridLayout col="0" (tap)="likeProduct()">
+                        <Label [class]="likeLabelClass" [text]="'fa-heart-o' | fonticon" horizontalAlignment="right" style=" font-size:20px;"></Label>
+                    </GridLayout>
+
+                    <GridLayout col="1" style=" margin-left: 20px">
+                        <Label textWrap="true" text="{{likeTotalCount}}" class="h3 description-label"></Label>
+                    </GridLayout>
+
+
+                </GridLayout>
+                <GridLayout col="2" horizontalAlignment="left" rows="auto,auto" style="margin-left: 20%; padding: 15px">
+                    <Label row="0" textWrap="true" text="Sold " class="h3 description-label"></Label>
+                    <Label row="1" textWrap="true" text="{{product.quantitySold}}" class="h2 description-label"></Label>
+
+                </GridLayout>
+            </GridLayout>
+            <GridLayout margin="15" marginTop="0" marginBottom="5">
+
+                <Button class="btn btn-primary w-full" text="Add to Cart" (tap)="addToCart()"></Button>
+            </GridLayout>
+        </StackLayout>
+
+        <StackLayout class="spec-style" orientation="vertical">
+
+            <Label textWrap="true" marginTop="10" text="Specification" marginLeft="20" class="h3 description-label"></Label>
+        </StackLayout>
+
+        <StackLayout class="layout-style" orientation="vertical">
+
+            <Label textWrap="true" marginLeft="15" padding="20" [text]="product.productSpec" class="h3 description-label"></Label>
+
+
+        </StackLayout>
+
+        <StackLayout *ngIf="canViewDetails" class="spec-style" orientation="vertical">
+
+            <Label textWrap="true" marginTop="10" text="Description" marginLeft="20" class="h3 description-label"></Label>
+        </StackLayout>
+
+        <StackLayout *ngIf="canViewDetails" class="layout-style" orientation="vertical">
+
+            <Label textWrap="true" marginLeft="15" padding="20" [text]="product.productDetailDesc" class="h3 description-label"></Label>
+
+
+        </StackLayout>
+
+        <StackLayout>
+
+            <GridLayout margin="5" marginTop="0" marginBottom="5">
+
+                <Button *ngIf="!canViewDetails" class="btn btn-primary w-full" text="View More" (tap)="viewMore()"></Button>
+                <Button *ngIf="canViewDetails" class="btn btn-primary w-full" text="View Less" (tap)="viewMore()"></Button>
+            </GridLayout>
+
+            <!-- <Label textWrap="true" marginTop="10" text="View More" marginLeft="20" class="h3 description-label"></Label> -->
+
+        </StackLayout>
+
+
+
+    </StackLayout>
+</ScrollView>

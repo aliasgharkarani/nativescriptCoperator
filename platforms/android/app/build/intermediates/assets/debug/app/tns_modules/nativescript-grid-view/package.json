@@ -1,0 +1,74 @@
+{
+  "_from": "nativescript-grid-view",
+  "_id": "nativescript-grid-view@3.4.0",
+  "_inBundle": false,
+  "_integrity": "sha1-uTU5KnhIWaefC7sBoyx1EjlPxOE=",
+  "_location": "/nativescript-grid-view",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "nativescript-grid-view",
+    "name": "nativescript-grid-view",
+    "escapedName": "nativescript-grid-view",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-grid-view/-/nativescript-grid-view-3.4.0.tgz",
+  "_shasum": "b935392a784859a79f0bbb01a32c7512394fc4e1",
+  "_spec": "nativescript-grid-view",
+  "_where": "C:\\Cooper\\CooperSwitch",
+  "author": {
+    "name": "Peter Staev",
+    "email": "peter@tangrasoft.com"
+  },
+  "bugs": {
+    "url": "https://github.com/PeterStaev/NativeScript-Grid-View/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Morten Sjøgren",
+      "url": "https://github.com/m-abs"
+    }
+  ],
+  "deprecated": false,
+  "description": "A NativeScript GridView widget.",
+  "homepage": "https://github.com/PeterStaev/NativeScript-Grid-View#readme",
+  "keywords": [
+    "NativeScript",
+    "GridView",
+    "RecyclerView",
+    "UICollectionView",
+    "tangra"
+  ],
+  "license": "Apache-2.0",
+  "main": "grid-view",
+  "name": "nativescript-grid-view",
+  "nativescript": {
+    "platforms": {
+      "ios": "3.0.0",
+      "android": "3.0.0"
+    },
+    "plugin": {
+      "nan": "true",
+      "pan": "true",
+      "core3": "true",
+      "category": "Interface"
+    }
+  },
+  "peerDependencies": {
+    "tns-core-modules": "^3.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeterStaev/NativeScript-Grid-View.git"
+  },
+  "typings": "grid-view.d.ts",
+  "version": "3.4.0"
+}

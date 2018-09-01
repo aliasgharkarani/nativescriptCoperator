@@ -1,0 +1,143 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var nativescript_module_1 = require("nativescript-angular/nativescript.module");
+var common_1 = require("nativescript-angular/common");
+var app_routing_1 = require("./app.routing");
+var forms_1 = require("@angular/forms");
+var http_1 = require("nativescript-angular/http");
+var http_client_1 = require("nativescript-angular/http-client");
+var http_2 = require("@angular/common/http");
+var forms_2 = require("nativescript-angular/forms");
+var app_component_1 = require("./app.component");
+var cooperative_service_1 = require("./services/cooperative.service");
+var cooperativeStaff_service_1 = require("./services/cooperativeStaff.service");
+var auth_service_1 = require("./services/auth.service");
+var autologout_service_1 = require("./services/autologout.service");
+var member_service_1 = require("./services/member.service");
+var coopercooperative_service_1 = require("./services/coopercooperative.service");
+var category_service_1 = require("./services/category.service");
+var auth_guard_service_1 = require("./auth-guard.service");
+var login_component_1 = require("./components/login/login.component");
+var register_component_1 = require("./components/register/register.component");
+var home_component_1 = require("./components/home/home.component");
+var secure_component_1 = require("./components/secure/secure.component");
+var password_component_1 = require("./components/password/password.component");
+var resetpassword_component_1 = require("./components/resetpassword/resetpassword.component");
+var changepassword2_component_1 = require("./components/changepassword2/changepassword2.component");
+var changepassword_component_1 = require("./components/changepassword/changepassword.component");
+var verifynumber_component_1 = require("./components/verifynumber/verifynumber.component");
+var otp_component_1 = require("./components/otp/otp.component");
+var settransaction_component_1 = require("./components/settransaction/settransaction.component");
+var profile_component_1 = require("./components/profile/profile.component");
+var profile1_component_1 = require("./components/profile1/profile1.component");
+var addnewcooperative_component_1 = require("./components/addnewcooperative/addnewcooperative.component");
+var account_component_1 = require("./components/account/account.component");
+var mycart_component_1 = require("./components/mycart/mycart.component");
+var pay_component_1 = require("./components/pay/pay.component");
+var buy_component_1 = require("./components/buy/buy.component");
+var accountdetails_component_1 = require("./components/accountdetails/accountdetails.component");
+var addnewproduct_component_1 = require("./components/addnewproduct/addnewproduct.component");
+var addnewseat_component_1 = require("./components/addnewseat/addnewseat.component");
+var payment_component_1 = require("./components/payment/payment.component");
+var shopcategory_component_1 = require("./components/shopcategory/shopcategory.component");
+var shopcatalogue_component_1 = require("./components/shopcatalogue/shopcatalogue.component");
+var vendor_component_1 = require("./components/vendor/vendor.component");
+var core_2 = require("@angular/core");
+var nativescript_ngx_fonticon_1 = require("nativescript-ngx-fonticon");
+var angular_1 = require("nativescript-drop-down/angular");
+var angular_2 = require("nativescript-grid-view/angular");
+var modal_dialog_1 = require("nativescript-angular/modal-dialog");
+var shop_component_1 = require("./components/shop/shop.component");
+var product_service_1 = require("./services/product.service");
+var audittrail_service_1 = require("./services/audittrail.service");
+var nativescript_ngx_slides_1 = require("nativescript-ngx-slides");
+var sponsorproduct_service_1 = require("./services/sponsorproduct.service");
+var advert_service_1 = require("./services/advert.service");
+var complaints_service_1 = require("./services/complaints.service");
+var cooperativestaffaccount_service_1 = require("./services/cooperativestaffaccount.service");
+var transaction_service_1 = require("./services/transaction.service");
+var productview_service_1 = require("./services/productview.service");
+var bank_service_1 = require("./services/bank.service");
+var angular_3 = require("nativescript-checkbox/angular");
+var input_directive_1 = require("./input.directive");
+var angular_4 = require("nativescript-bottom-navigation/angular");
+var modal_1 = require("./components/modal");
+var angular_5 = require("nativescript-accordion/angular");
+var buynew_component_1 = require("./components/buynew/buynew.component");
+var phoneverify_component_1 = require("./components/phoneverify/phoneverify.component");
+var landpage_component_1 = require("./components/landpage/landpage.component");
+var transactionsuccess_component_1 = require("./components/transactionsuccess/transactionsuccess.component");
+// turn debug on
+nativescript_ngx_fonticon_1.TNSFontIconService.debug = true;
+core_2.enableProdMode();
+// Uncomment and add to NgModule imports if you need to use two-way binding
+// import { NativeScriptFormsModule } from "nativescript-angular/forms";
+// Uncomment and add to NgModule imports  if you need to use the HTTP wrapper
+// import { NativeScriptHttpModule } from "nativescript-angular/http";
+var AppModule = /** @class */ (function () {
+    /*
+    Pass your application module to the bootstrapModule function located in main.ts to start your app
+    */
+    function AppModule() {
+    }
+    AppModule = __decorate([
+        core_1.NgModule({
+            bootstrap: [
+                app_component_1.AppComponent
+            ],
+            imports: [
+                common_1.NativeScriptCommonModule, nativescript_module_1.NativeScriptModule, http_1.NativeScriptHttpModule, http_client_1.NativeScriptHttpClientModule, forms_2.NativeScriptFormsModule,
+                app_routing_1.AppRoutingModule, angular_1.DropDownModule, angular_2.GridViewModule, nativescript_ngx_slides_1.SlidesModule, angular_3.TNSCheckBoxModule, forms_1.ReactiveFormsModule,
+                angular_4.NativescriptBottomNavigationModule, http_2.HttpClientModule, angular_5.AccordionModule, nativescript_ngx_fonticon_1.TNSFontIconModule.forRoot({
+                    'fa': './assets/font-awesome.css',
+                    'ion': './assets/ionicons.css'
+                })
+            ],
+            declarations: [
+                app_component_1.AppComponent,
+                login_component_1.LoginComponent,
+                register_component_1.RegisterComponent,
+                secure_component_1.SecureComponent,
+                home_component_1.HomeComponent,
+                password_component_1.PasswordComponent,
+                resetpassword_component_1.ResetPasswordComponent,
+                modal_1.ModalComponent,
+                changepassword2_component_1.ChangePassword2Component,
+                verifynumber_component_1.VerifyNumberComponent,
+                otp_component_1.OtpComponent,
+                settransaction_component_1.SetTransactionComponent,
+                profile_component_1.ProfileComponent,
+                profile1_component_1.Profile1Component,
+                changepassword_component_1.ChangePasswordComponent,
+                addnewcooperative_component_1.AddNewCooperativeComponent,
+                account_component_1.AccountComponent,
+                buynew_component_1.BuyNewComponent,
+                shop_component_1.ShopComponent,
+                mycart_component_1.MyCartComponent,
+                pay_component_1.PayComponent,
+                buy_component_1.BuyComponent,
+                accountdetails_component_1.AccountDetailsComponent, input_directive_1.MinLengthDirective, input_directive_1.IsEmailDirective,
+                addnewproduct_component_1.AddNewProductComponent, addnewseat_component_1.AddNewSeatComponent, payment_component_1.PaymentComponent,
+                shopcategory_component_1.ShopCategoryComponent, shopcatalogue_component_1.ShopCatalogueComponent, vendor_component_1.VendorRegisterComponent,
+                phoneverify_component_1.PhoneVerifyComponent,
+                landpage_component_1.LandpageComponent, transactionsuccess_component_1.SuccessTransComponent
+            ],
+            entryComponents: [modal_1.ModalComponent],
+            providers: [
+                auth_guard_service_1.AuthGuard, cooperative_service_1.CooperativeService, cooperativeStaff_service_1.CooperativeStaffService, auth_service_1.AuthService, member_service_1.MemberService, modal_dialog_1.ModalDialogService, coopercooperative_service_1.CooperCooperativeService,
+                category_service_1.CategoryService, product_service_1.ProductService, sponsorproduct_service_1.SponsorProductService, advert_service_1.AdvertService, cooperativestaffaccount_service_1.CooperativeStaffAccountService, transaction_service_1.TransactionService,
+                productview_service_1.ProductViewService, bank_service_1.BankService, autologout_service_1.AutoLogoutService, complaints_service_1.ComplaintService, audittrail_service_1.AuditTrailService
+            ],
+            schemas: [
+                core_1.NO_ERRORS_SCHEMA
+            ]
+        })
+        /*
+        Pass your application module to the bootstrapModule function located in main.ts to start your app
+        */
+    ], AppModule);
+    return AppModule;
+}());
+exports.AppModule = AppModule;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwLm1vZHVsZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbImFwcC5tb2R1bGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxzQ0FBMkQ7QUFDM0QsZ0ZBQThFO0FBQzlFLHNEQUF1RTtBQUV2RSw2Q0FBaUQ7QUFFakQsd0NBQXFEO0FBRXJELGtEQUFtRTtBQUNuRSxnRUFBZ0Y7QUFDaEYsNkNBQXdEO0FBQ3hELG9EQUFxRTtBQUNyRSxpREFBK0M7QUFHL0Msc0VBQWtFO0FBQ2xFLGdGQUE0RTtBQUM1RSx3REFBb0Q7QUFDcEQsb0VBQWdFO0FBRWhFLDREQUF3RDtBQUN4RCxrRkFBOEU7QUFDOUUsZ0VBQTREO0FBSzVELDJEQUFpRDtBQUVqRCxzRUFBa0U7QUFDbEUsK0VBQTJFO0FBQzNFLG1FQUErRDtBQUMvRCx5RUFBcUU7QUFDckUsK0VBQTJFO0FBRTNFLDhGQUEwRjtBQUMxRixvR0FBZ0c7QUFDaEcsaUdBQTZGO0FBQzdGLDJGQUF1RjtBQUN2RixnRUFBNEQ7QUFDNUQsaUdBQTZGO0FBQzdGLDRFQUF3RTtBQUN4RSwrRUFBMkU7QUFDM0UsMEdBQXNHO0FBQ3RHLDRFQUF3RTtBQUN4RSx5RUFBcUU7QUFDckUsZ0VBQTREO0FBQzVELGdFQUE0RDtBQUM1RCxpR0FBNkY7QUFDN0YsOEZBQTBGO0FBQzFGLHFGQUFpRjtBQUNqRiw0RUFBd0U7QUFDeEUsMkZBQXVGO0FBQ3ZGLDhGQUEwRjtBQUMxRix5RUFBNkU7QUFLN0Usc0NBQStDO0FBQy9DLHVFQUFpRjtBQUNqRiwwREFBZ0U7QUFDaEUsMERBQWdFO0FBQ2hFLGtFQUF1RTtBQUN2RSxtRUFBOEQ7QUFHOUQsOERBQTREO0FBQzVELG9FQUFrRTtBQUNsRSxtRUFBdUQ7QUFDdkQsNEVBQXdFO0FBQ3hFLDREQUF3RDtBQUN4RCxvRUFBK0Q7QUFFL0QsOEZBQTRGO0FBQzVGLHNFQUFvRTtBQUNwRSxzRUFBa0U7QUFDbEUsd0RBQW9EO0FBR3BELHlEQUFrRTtBQUNsRSxxREFBeUU7QUFDekUsa0VBQTJGO0FBQzNGLDRDQUFvRDtBQUNwRCwwREFBaUU7QUFDakUseUVBQXFFO0FBQ3JFLHdGQUFvRjtBQUNwRiwrRUFBMkU7QUFDM0UsNkdBQW1HO0FBTW5HLGdCQUFnQjtBQUNoQiw4Q0FBa0IsQ0FBQyxLQUFLLEdBQUcsSUFBSSxDQUFDO0FBRWhDLHFCQUFjLEVBQUUsQ0FBQztBQUVqQiwyRUFBMkU7QUFDM0Usd0VBQXdFO0FBRXhFLDZFQUE2RTtBQUM3RSxzRUFBc0U7QUE4RHRFO0lBSEE7O01BRUU7SUFDRjtJQUF5QixDQUFDO0lBQWIsU0FBUztRQTVEckIsZUFBUSxDQUFDO1lBQ04sU0FBUyxFQUFFO2dCQUNQLDRCQUFZO2FBQ2Y7WUFDRCxPQUFPLEVBQUU7Z0JBQ0wsaUNBQXdCLEVBQUUsd0NBQWtCLEVBQUMsNkJBQXNCLEVBQUMsMENBQTRCLEVBQUMsK0JBQXVCO2dCQUN4SCw4QkFBZ0IsRUFBQyx3QkFBYyxFQUFDLHdCQUFjLEVBQUMsc0NBQVksRUFBQywyQkFBaUIsRUFBQywyQkFBbUI7Z0JBQ2pHLDRDQUFrQyxFQUFDLHVCQUFnQixFQUFDLHlCQUFlLEVBQUMsNkNBQWlCLENBQUMsT0FBTyxDQUFDO29CQUNuRyxJQUFJLEVBQUUsMkJBQTJCO29CQUNqQyxLQUFLLEVBQUUsdUJBQXVCO2lCQUM5QixDQUFDO2FBQ0M7WUFDRCxZQUFZLEVBQUU7Z0JBQ1YsNEJBQVk7Z0JBQ1osZ0NBQWM7Z0JBQ2Qsc0NBQWlCO2dCQUNqQixrQ0FBZTtnQkFDZiw4QkFBYTtnQkFDYixzQ0FBaUI7Z0JBRWpCLGdEQUFzQjtnQkFDdEIsc0JBQWM7Z0JBQ2Qsb0RBQXdCO2dCQUN4Qiw4Q0FBcUI7Z0JBQ3JCLDRCQUFZO2dCQUNaLGtEQUF1QjtnQkFDdkIsb0NBQWdCO2dCQUNoQixzQ0FBaUI7Z0JBQ2pCLGtEQUF1QjtnQkFDdkIsd0RBQTBCO2dCQUMxQixvQ0FBZ0I7Z0JBQ2hCLGtDQUFlO2dCQUNmLDhCQUFhO2dCQUViLGtDQUFlO2dCQUNmLDRCQUFZO2dCQUNaLDRCQUFZO2dCQUNaLGtEQUF1QixFQUFDLG9DQUFrQixFQUFFLGtDQUFnQjtnQkFDNUQsZ0RBQXNCLEVBQUMsMENBQW1CLEVBQUMsb0NBQWdCO2dCQUMzRCw4Q0FBcUIsRUFBQyxnREFBc0IsRUFBQywwQ0FBdUI7Z0JBQ3BFLDRDQUFvQjtnQkFDcEIsc0NBQWlCLEVBQUMsb0RBQXFCO2FBSzFDO1lBQ0QsZUFBZSxFQUFFLENBQUMsc0JBQWMsQ0FBQztZQUNqQyxTQUFTLEVBQUU7Z0JBQ1AsOEJBQVMsRUFBQyx3Q0FBa0IsRUFBQyxrREFBdUIsRUFBQywwQkFBVyxFQUFDLDhCQUFhLEVBQUMsaUNBQWtCLEVBQUMsb0RBQXdCO2dCQUMxSCxrQ0FBZSxFQUFDLGdDQUFjLEVBQUMsOENBQXFCLEVBQUMsOEJBQWEsRUFBQyxnRUFBOEIsRUFBQyx3Q0FBa0I7Z0JBQ3BILHdDQUFrQixFQUFDLDBCQUFXLEVBQUMsc0NBQWlCLEVBQUMscUNBQWdCLEVBQUMsc0NBQWlCO2FBQ3RGO1lBQ0QsT0FBTyxFQUFFO2dCQUNMLHVCQUFnQjthQUNuQjtTQUNKLENBQUM7UUFDRjs7VUFFRTtPQUNXLFNBQVMsQ0FBSTtJQUFELGdCQUFDO0NBQUEsQUFBMUIsSUFBMEI7QUFBYiw4QkFBUyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IE5nTW9kdWxlLCBOT19FUlJPUlNfU0NIRU1BIH0gZnJvbSBcIkBhbmd1bGFyL2NvcmVcIjtcbmltcG9ydCB7IE5hdGl2ZVNjcmlwdE1vZHVsZSB9IGZyb20gXCJuYXRpdmVzY3JpcHQtYW5ndWxhci9uYXRpdmVzY3JpcHQubW9kdWxlXCI7XG5pbXBvcnQgeyBOYXRpdmVTY3JpcHRDb21tb25Nb2R1bGUgfSBmcm9tIFwibmF0aXZlc2NyaXB0LWFuZ3VsYXIvY29tbW9uXCI7XG5cbmltcG9ydCB7IEFwcFJvdXRpbmdNb2R1bGUgfSBmcm9tIFwiLi9hcHAucm91dGluZ1wiO1xuXG5pbXBvcnQgeyBSZWFjdGl2ZUZvcm1zTW9kdWxlIH0gZnJvbSBcIkBhbmd1bGFyL2Zvcm1zXCI7XG5cbmltcG9ydCB7IE5hdGl2ZVNjcmlwdEh0dHBNb2R1bGUgfSBmcm9tIFwibmF0aXZlc2NyaXB0LWFuZ3VsYXIvaHR0cFwiO1xuaW1wb3J0IHsgTmF0aXZlU2NyaXB0SHR0cENsaWVudE1vZHVsZSB9IGZyb20gXCJuYXRpdmVzY3JpcHQtYW5ndWxhci9odHRwLWNsaWVudFwiO1xuaW1wb3J0IHsgSHR0cENsaWVudE1vZHVsZSB9IGZyb20gJ0Bhbmd1bGFyL2NvbW1vbi9odHRwJztcbmltcG9ydCB7IE5hdGl2ZVNjcmlwdEZvcm1zTW9kdWxlIH0gZnJvbSBcIm5hdGl2ZXNjcmlwdC1hbmd1bGFyL2Zvcm1zXCI7XG5pbXBvcnQgeyBBcHBDb21wb25lbnQgfSBmcm9tIFwiLi9hcHAuY29tcG9uZW50XCI7XG5cblxuaW1wb3J0IHtDb29wZXJhdGl2ZVNlcnZpY2V9IGZyb20gXCIuL3NlcnZpY2VzL2Nvb3BlcmF0aXZlLnNlcnZpY2VcIjtcbmltcG9ydCB7Q29vcGVyYXRpdmVTdGFmZlNlcnZpY2V9IGZyb20gXCIuL3NlcnZpY2VzL2Nvb3BlcmF0aXZlU3RhZmYuc2VydmljZVwiO1xuaW1wb3J0IHtBdXRoU2VydmljZX0gZnJvbSBcIi4vc2VydmljZXMvYXV0aC5zZXJ2aWNlXCI7XG5pbXBvcnQge0F1dG9Mb2dvdXRTZXJ2aWNlfSBmcm9tIFwiLi9zZXJ2aWNlcy9hdXRvbG9nb3V0LnNlcnZpY2VcIjtcblxuaW1wb3J0IHtNZW1iZXJTZXJ2aWNlfSBmcm9tIFwiLi9zZXJ2aWNlcy9tZW1iZXIuc2VydmljZVwiO1xuaW1wb3J0IHtDb29wZXJDb29wZXJhdGl2ZVNlcnZpY2V9IGZyb20gXCIuL3NlcnZpY2VzL2Nvb3BlcmNvb3BlcmF0aXZlLnNlcnZpY2VcIjtcbmltcG9ydCB7Q2F0ZWdvcnlTZXJ2aWNlfSBmcm9tIFwiLi9zZXJ2aWNlcy9jYXRlZ29yeS5zZXJ2aWNlXCI7XG5cblxuXG5cbmltcG9ydCB7IEF1dGhHdWFyZCB9IGZyb20gXCIuL2F1dGgtZ3VhcmQuc2VydmljZVwiO1xuXG5pbXBvcnQge0xvZ2luQ29tcG9uZW50fSBmcm9tIFwiLi9jb21wb25lbnRzL2xvZ2luL2xvZ2luLmNvbXBvbmVudFwiO1xuaW1wb3J0IHtSZWdpc3RlckNvbXBvbmVudH0gZnJvbSBcIi4vY29tcG9uZW50cy9yZWdpc3Rlci9yZWdpc3Rlci5jb21wb25lbnRcIjtcbmltcG9ydCB7SG9tZUNvbXBvbmVudH0gZnJvbSBcIi4vY29tcG9uZW50cy9ob21lL2hvbWUuY29tcG9uZW50XCI7XG5pbXBvcnQge1NlY3VyZUNvbXBvbmVudH0gZnJvbSBcIi4vY29tcG9uZW50cy9zZWN1cmUvc2VjdXJlLmNvbXBvbmVudFwiO1xuaW1wb3J0IHtQYXNzd29yZENvbXBvbmVudH0gZnJvbSBcIi4vY29tcG9uZW50cy9wYXNzd29yZC9wYXNzd29yZC5jb21wb25lbnRcIjtcblxuaW1wb3J0IHtSZXNldFBhc3N3b3JkQ29tcG9uZW50fSBmcm9tIFwiLi9jb21wb25lbnRzL3Jlc2V0cGFzc3dvcmQvcmVzZXRwYXNzd29yZC5jb21wb25lbnRcIjtcbmltcG9ydCB7Q2hhbmdlUGFzc3dvcmQyQ29tcG9uZW50fSBmcm9tIFwiLi9jb21wb25lbnRzL2NoYW5nZXBhc3N3b3JkMi9jaGFuZ2VwYXNzd29yZDIuY29tcG9uZW50XCI7XG5pbXBvcnQge0NoYW5nZVBhc3N3b3JkQ29tcG9uZW50fSBmcm9tIFwiLi9jb21wb25lbnRzL2NoYW5nZXBhc3N3b3JkL2NoYW5nZXBhc3N3b3JkLmNvbXBvbmVudFwiO1xuaW1wb3J0IHtWZXJpZnlOdW1iZXJDb21wb25lbnR9IGZyb20gXCIuL2NvbXBvbmVudHMvdmVyaWZ5bnVtYmVyL3ZlcmlmeW51bWJlci5jb21wb25lbnRcIjtcbmltcG9ydCB7T3RwQ29tcG9uZW50fSBmcm9tIFwiLi9jb21wb25lbnRzL290cC9vdHAuY29tcG9uZW50XCI7XG5pbXBvcnQge1NldFRyYW5zYWN0aW9uQ29tcG9uZW50fSBmcm9tIFwiLi9jb21wb25lbnRzL3NldHRyYW5zYWN0aW9uL3NldHRyYW5zYWN0aW9uLmNvbXBvbmVudFwiO1xuaW1wb3J0IHtQcm9maWxlQ29tcG9uZW50fSBmcm9tIFwiLi9jb21wb25lbnRzL3Byb2ZpbGUvcHJvZmlsZS5jb21wb25lbnRcIjtcbmltcG9ydCB7UHJvZmlsZTFDb21wb25lbnR9IGZyb20gXCIuL2NvbXBvbmVudHMvcHJvZmlsZTEvcHJvZmlsZTEuY29tcG9uZW50XCI7XG5pbXBvcnQge0FkZE5ld0Nvb3BlcmF0aXZlQ29tcG9uZW50fSBmcm9tIFwiLi9jb21wb25lbnRzL2FkZG5ld2Nvb3BlcmF0aXZlL2FkZG5ld2Nvb3BlcmF0aXZlLmNvbXBvbmVudFwiO1xuaW1wb3J0IHtBY2NvdW50Q29tcG9uZW50fSBmcm9tIFwiLi9jb21wb25lbnRzL2FjY291bnQvYWNjb3VudC5jb21wb25lbnRcIjtcbmltcG9ydCB7TXlDYXJ0Q29tcG9uZW50fSBmcm9tIFwiLi9jb21wb25lbnRzL215Y2FydC9teWNhcnQuY29tcG9uZW50XCI7XG5pbXBvcnQge1BheUNvbXBvbmVudH0gZnJvbSBcIi4vY29tcG9uZW50cy9wYXkvcGF5LmNvbXBvbmVudFwiO1xuaW1wb3J0IHtCdXlDb21wb25lbnR9IGZyb20gXCIuL2NvbXBvbmVudHMvYnV5L2J1eS5jb21wb25lbnRcIjtcbmltcG9ydCB7QWNjb3VudERldGFpbHNDb21wb25lbnR9IGZyb20gXCIuL2NvbXBvbmVudHMvYWNjb3VudGRldGFpbHMvYWNjb3VudGRldGFpbHMuY29tcG9uZW50XCI7XG5pbXBvcnQge0FkZE5ld1Byb2R1Y3RDb21wb25lbnR9IGZyb20gXCIuL2NvbXBvbmVudHMvYWRkbmV3cHJvZHVjdC9hZGRuZXdwcm9kdWN0LmNvbXBvbmVudFwiO1xuaW1wb3J0IHtBZGROZXdTZWF0Q29tcG9uZW50fSBmcm9tIFwiLi9jb21wb25lbnRzL2FkZG5ld3NlYXQvYWRkbmV3c2VhdC5jb21wb25lbnRcIjtcbmltcG9ydCB7UGF5bWVudENvbXBvbmVudH0gZnJvbSBcIi4vY29tcG9uZW50cy9wYXltZW50L3BheW1lbnQuY29tcG9uZW50XCI7XG5pbXBvcnQge1Nob3BDYXRlZ29yeUNvbXBvbmVudH0gZnJvbSBcIi4vY29tcG9uZW50cy9zaG9wY2F0ZWdvcnkvc2hvcGNhdGVnb3J5LmNvbXBvbmVudFwiO1xuaW1wb3J0IHtTaG9wQ2F0YWxvZ3VlQ29tcG9uZW50fSBmcm9tIFwiLi9jb21wb25lbnRzL3Nob3BjYXRhbG9ndWUvc2hvcGNhdGFsb2d1ZS5jb21wb25lbnRcIjtcbmltcG9ydCB7VmVuZG9yUmVnaXN0ZXJDb21wb25lbnR9IGZyb20gXCIuL2NvbXBvbmVudHMvdmVuZG9yL3ZlbmRvci5jb21wb25lbnRcIjtcblxuXG5cblxuaW1wb3J0IHsgZW5hYmxlUHJvZE1vZGUgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcbmltcG9ydCB7IFROU0ZvbnRJY29uTW9kdWxlLFROU0ZvbnRJY29uU2VydmljZSB9IGZyb20gJ25hdGl2ZXNjcmlwdC1uZ3gtZm9udGljb24nO1xuaW1wb3J0IHsgRHJvcERvd25Nb2R1bGUgfSBmcm9tIFwibmF0aXZlc2NyaXB0LWRyb3AtZG93bi9hbmd1bGFyXCI7XG5pbXBvcnQgeyBHcmlkVmlld01vZHVsZSB9IGZyb20gJ25hdGl2ZXNjcmlwdC1ncmlkLXZpZXcvYW5ndWxhcic7XG5pbXBvcnQgeyBNb2RhbERpYWxvZ1NlcnZpY2UgfSBmcm9tIFwibmF0aXZlc2NyaXB0LWFuZ3VsYXIvbW9kYWwtZGlhbG9nXCI7XG5pbXBvcnR7U2hvcENvbXBvbmVudH0gZnJvbSBcIi4vY29tcG9uZW50cy9zaG9wL3Nob3AuY29tcG9uZW50XCI7XG5cblxuaW1wb3J0IHsgUHJvZHVjdFNlcnZpY2UgfSBmcm9tIFwiLi9zZXJ2aWNlcy9wcm9kdWN0LnNlcnZpY2VcIjtcbmltcG9ydCB7IEF1ZGl0VHJhaWxTZXJ2aWNlIH0gZnJvbSBcIi4vc2VydmljZXMvYXVkaXR0cmFpbC5zZXJ2aWNlXCI7XG5pbXBvcnQgeyBTbGlkZXNNb2R1bGUgfSBmcm9tICduYXRpdmVzY3JpcHQtbmd4LXNsaWRlcyc7XG5pbXBvcnQge1Nwb25zb3JQcm9kdWN0U2VydmljZX0gZnJvbSBcIi4vc2VydmljZXMvc3BvbnNvcnByb2R1Y3Quc2VydmljZVwiO1xuaW1wb3J0IHtBZHZlcnRTZXJ2aWNlfSBmcm9tIFwiLi9zZXJ2aWNlcy9hZHZlcnQuc2VydmljZVwiO1xuaW1wb3J0IHtDb21wbGFpbnRTZXJ2aWNlfSBmcm9tIFwiLi9zZXJ2aWNlcy9jb21wbGFpbnRzLnNlcnZpY2VcIjtcblxuaW1wb3J0IHsgQ29vcGVyYXRpdmVTdGFmZkFjY291bnRTZXJ2aWNlIH0gZnJvbSBcIi4vc2VydmljZXMvY29vcGVyYXRpdmVzdGFmZmFjY291bnQuc2VydmljZVwiO1xuaW1wb3J0IHsgVHJhbnNhY3Rpb25TZXJ2aWNlIH0gZnJvbSBcIi4vc2VydmljZXMvdHJhbnNhY3Rpb24uc2VydmljZVwiO1xuaW1wb3J0IHtQcm9kdWN0Vmlld1NlcnZpY2V9IGZyb20gXCIuL3NlcnZpY2VzL3Byb2R1Y3R2aWV3LnNlcnZpY2VcIjtcbmltcG9ydCB7QmFua1NlcnZpY2V9IGZyb20gXCIuL3NlcnZpY2VzL2Jhbmsuc2VydmljZVwiO1xuXG5cbmltcG9ydCB7IFROU0NoZWNrQm94TW9kdWxlIH0gZnJvbSAnbmF0aXZlc2NyaXB0LWNoZWNrYm94L2FuZ3VsYXInO1xuaW1wb3J0IHsgTWluTGVuZ3RoRGlyZWN0aXZlLCBJc0VtYWlsRGlyZWN0aXZlIH0gZnJvbSBcIi4vaW5wdXQuZGlyZWN0aXZlXCI7XG5pbXBvcnQgeyBOYXRpdmVzY3JpcHRCb3R0b21OYXZpZ2F0aW9uTW9kdWxlfSBmcm9tIFwibmF0aXZlc2NyaXB0LWJvdHRvbS1uYXZpZ2F0aW9uL2FuZ3VsYXJcIjtcbmltcG9ydCB7IE1vZGFsQ29tcG9uZW50IH0gZnJvbSBcIi4vY29tcG9uZW50cy9tb2RhbFwiO1xuaW1wb3J0IHsgQWNjb3JkaW9uTW9kdWxlIH0gZnJvbSBcIm5hdGl2ZXNjcmlwdC1hY2NvcmRpb24vYW5ndWxhclwiO1xuaW1wb3J0IHtCdXlOZXdDb21wb25lbnR9IGZyb20gXCIuL2NvbXBvbmVudHMvYnV5bmV3L2J1eW5ldy5jb21wb25lbnRcIjtcbmltcG9ydCB7UGhvbmVWZXJpZnlDb21wb25lbnR9IGZyb20gXCIuL2NvbXBvbmVudHMvcGhvbmV2ZXJpZnkvcGhvbmV2ZXJpZnkuY29tcG9uZW50XCI7XG5pbXBvcnQge0xhbmRwYWdlQ29tcG9uZW50fSBmcm9tIFwiLi9jb21wb25lbnRzL2xhbmRwYWdlL2xhbmRwYWdlLmNvbXBvbmVudFwiO1xuaW1wb3J0IHtTdWNjZXNzVHJhbnNDb21wb25lbnR9IGZyb20gXCIuL2NvbXBvbmVudHMvdHJhbnNhY3Rpb25zdWNjZXNzL3RyYW5zYWN0aW9uc3VjY2Vzcy5jb21wb25lbnRcIjtcblxuXG5cblxuXG4vLyB0dXJuIGRlYnVnIG9uXG5UTlNGb250SWNvblNlcnZpY2UuZGVidWcgPSB0cnVlO1xuXG5lbmFibGVQcm9kTW9kZSgpO1xuXG4vLyBVbmNvbW1lbnQgYW5kIGFkZCB0byBOZ01vZHVsZSBpbXBvcnRzIGlmIHlvdSBuZWVkIHRvIHVzZSB0d28td2F5IGJpbmRpbmdcbi8vIGltcG9ydCB7IE5hdGl2ZVNjcmlwdEZvcm1zTW9kdWxlIH0gZnJvbSBcIm5hdGl2ZXNjcmlwdC1hbmd1bGFyL2Zvcm1zXCI7XG5cbi8vIFVuY29tbWVudCBhbmQgYWRkIHRvIE5nTW9kdWxlIGltcG9ydHMgIGlmIHlvdSBuZWVkIHRvIHVzZSB0aGUgSFRUUCB3cmFwcGVyXG4vLyBpbXBvcnQgeyBOYXRpdmVTY3JpcHRIdHRwTW9kdWxlIH0gZnJvbSBcIm5hdGl2ZXNjcmlwdC1hbmd1bGFyL2h0dHBcIjtcblxuQE5nTW9kdWxlKHtcbiAgICBib290c3RyYXA6IFtcbiAgICAgICAgQXBwQ29tcG9uZW50XG4gICAgXSxcbiAgICBpbXBvcnRzOiBbXG4gICAgICAgIE5hdGl2ZVNjcmlwdENvbW1vbk1vZHVsZSwgTmF0aXZlU2NyaXB0TW9kdWxlLE5hdGl2ZVNjcmlwdEh0dHBNb2R1bGUsTmF0aXZlU2NyaXB0SHR0cENsaWVudE1vZHVsZSxOYXRpdmVTY3JpcHRGb3Jtc01vZHVsZSxcbiAgICAgICAgQXBwUm91dGluZ01vZHVsZSxEcm9wRG93bk1vZHVsZSxHcmlkVmlld01vZHVsZSxTbGlkZXNNb2R1bGUsVE5TQ2hlY2tCb3hNb2R1bGUsUmVhY3RpdmVGb3Jtc01vZHVsZSxcbiAgICAgICAgTmF0aXZlc2NyaXB0Qm90dG9tTmF2aWdhdGlvbk1vZHVsZSxIdHRwQ2xpZW50TW9kdWxlLEFjY29yZGlvbk1vZHVsZSxUTlNGb250SWNvbk1vZHVsZS5mb3JSb290KHtcblx0XHRcdCdmYSc6ICcuL2Fzc2V0cy9mb250LWF3ZXNvbWUuY3NzJyxcblx0XHRcdCdpb24nOiAnLi9hc3NldHMvaW9uaWNvbnMuY3NzJ1xuXHRcdH0pXG4gICAgXSxcbiAgICBkZWNsYXJhdGlvbnM6IFtcbiAgICAgICAgQXBwQ29tcG9uZW50LFxuICAgICAgICBMb2dpbkNvbXBvbmVudCxcbiAgICAgICAgUmVnaXN0ZXJDb21wb25lbnQsXG4gICAgICAgIFNlY3VyZUNvbXBvbmVudCxcbiAgICAgICAgSG9tZUNvbXBvbmVudCxcbiAgICAgICAgUGFzc3dvcmRDb21wb25lbnQsXG4gICAgICAgXG4gICAgICAgIFJlc2V0UGFzc3dvcmRDb21wb25lbnQsXG4gICAgICAgIE1vZGFsQ29tcG9uZW50LFxuICAgICAgICBDaGFuZ2VQYXNzd29yZDJDb21wb25lbnQsXG4gICAgICAgIFZlcmlmeU51bWJlckNvbXBvbmVudCxcbiAgICAgICAgT3RwQ29tcG9uZW50LFxuICAgICAgICBTZXRUcmFuc2FjdGlvbkNvbXBvbmVudCxcbiAgICAgICAgUHJvZmlsZUNvbXBvbmVudCxcbiAgICAgICAgUHJvZmlsZTFDb21wb25lbnQsXG4gICAgICAgIENoYW5nZVBhc3N3b3JkQ29tcG9uZW50LFxuICAgICAgICBBZGROZXdDb29wZXJhdGl2ZUNvbXBvbmVudCxcbiAgICAgICAgQWNjb3VudENvbXBvbmVudCxcbiAgICAgICAgQnV5TmV3Q29tcG9uZW50LFxuICAgICAgICBTaG9wQ29tcG9uZW50LFxuICAgICAgXG4gICAgICAgIE15Q2FydENvbXBvbmVudCxcbiAgICAgICAgUGF5Q29tcG9uZW50LFxuICAgICAgICBCdXlDb21wb25lbnQsXG4gICAgICAgIEFjY291bnREZXRhaWxzQ29tcG9uZW50LE1pbkxlbmd0aERpcmVjdGl2ZSwgSXNFbWFpbERpcmVjdGl2ZSxcbiAgICAgICAgQWRkTmV3UHJvZHVjdENvbXBvbmVudCxBZGROZXdTZWF0Q29tcG9uZW50LFBheW1lbnRDb21wb25lbnQsXG4gICAgICAgIFNob3BDYXRlZ29yeUNvbXBvbmVudCxTaG9wQ2F0YWxvZ3VlQ29tcG9uZW50LFZlbmRvclJlZ2lzdGVyQ29tcG9uZW50LFxuICAgICAgICBQaG9uZVZlcmlmeUNvbXBvbmVudCxcbiAgICAgICAgTGFuZHBhZ2VDb21wb25lbnQsU3VjY2Vzc1RyYW5zQ29tcG9uZW50XG4gICAgICAgXG4gICBcbiAgICAgICAgXG4gICAgICAgIFxuICAgIF0sXG4gICAgZW50cnlDb21wb25lbnRzOiBbTW9kYWxDb21wb25lbnRdLFxuICAgIHByb3ZpZGVyczogW1xuICAgICAgICBBdXRoR3VhcmQsQ29vcGVyYXRpdmVTZXJ2aWNlLENvb3BlcmF0aXZlU3RhZmZTZXJ2aWNlLEF1dGhTZXJ2aWNlLE1lbWJlclNlcnZpY2UsTW9kYWxEaWFsb2dTZXJ2aWNlLENvb3BlckNvb3BlcmF0aXZlU2VydmljZSxcbiAgICAgICAgQ2F0ZWdvcnlTZXJ2aWNlLFByb2R1Y3RTZXJ2aWNlLFNwb25zb3JQcm9kdWN0U2VydmljZSxBZHZlcnRTZXJ2aWNlLENvb3BlcmF0aXZlU3RhZmZBY2NvdW50U2VydmljZSxUcmFuc2FjdGlvblNlcnZpY2UsXG4gICAgICAgIFByb2R1Y3RWaWV3U2VydmljZSxCYW5rU2VydmljZSxBdXRvTG9nb3V0U2VydmljZSxDb21wbGFpbnRTZXJ2aWNlLEF1ZGl0VHJhaWxTZXJ2aWNlXG4gICAgXSxcbiAgICBzY2hlbWFzOiBbXG4gICAgICAgIE5PX0VSUk9SU19TQ0hFTUFcbiAgICBdXG59KVxuLypcblBhc3MgeW91ciBhcHBsaWNhdGlvbiBtb2R1bGUgdG8gdGhlIGJvb3RzdHJhcE1vZHVsZSBmdW5jdGlvbiBsb2NhdGVkIGluIG1haW4udHMgdG8gc3RhcnQgeW91ciBhcHBcbiovXG5leHBvcnQgY2xhc3MgQXBwTW9kdWxlIHsgfVxuIl19

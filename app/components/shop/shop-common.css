@@ -1,0 +1,466 @@
+/* Hide a bunch of things to setup the initial animations */
+
+.form-controls,
+.sign-up-stack {
+    opacity: 0;
+}
+
+ActionBar {
+    background-color: rgb(37, 16, 28);
+    color: white;
+}
+
+Image {
+    margin-top: 20;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 80;
+}
+
+
+/* TODO: Assigning explicit heights and applying this margin shouldn’t be necessary. */
+
+.initial-container {}
+
+.initial-logo {
+    horizontal-align: center;
+    margin-bottom: 10;
+}
+
+.initial-label {
+    color: white;
+    horizontal-align: center;
+    margin-bottom: 80;
+}
+
+.initial-button {
+    background-color: white;
+    color: #CB1D00;
+    height: 45;
+    width: 275;
+    vertical-align: center;
+}
+
+.initial-button-label {
+    horizontal-align: center;
+    font-weight: bold;
+}
+
+.main-container {
+    visibility: collapse;
+    opacity: 0;
+    margin-left: 30;
+    margin-right: 30;
+    background-color: white;
+}
+
+.main-label {
+    horizontal-align: center;
+    color: black;
+}
+
+Image {
+    margin-top: 5;
+    margin-bottom: 20;
+}
+
+Button,
+TextField {
+    margin-left: 16;
+    margin-right: 16;
+    margin-bottom: 10;
+}
+
+TextField {
+    color: black;
+    placeholder-color: #ACA6A7;
+}
+
+TextField.light {
+    color: #C4AFB4;
+    placeholder-color: #C4AFB4;
+}
+
+.submit-button {
+    background-color: #CB1D00;
+    color: white;
+    margin-top: 20;
+}
+
+.forgot-password-label {
+    font-size: 13;
+    margin-left: 20;
+    margin-bottom: 45;
+    color: black;
+}
+
+.sign-up-stack {
+    background-color: #311217;
+}
+
+.sign-up-stack Label {
+    color: white;
+    horizontal-align: center;
+    font-size: 15;
+}
+
+.logo-container {
+    visibility: collapse;
+    horizontal-align: center;
+    opacity: 0;
+}
+
+.input {
+    color: black;
+}
+
+.btn-primary {
+    background-color: #d08110;
+}
+
+.text-center {
+    color: goldenrod;
+}
+
+.set-pin {
+    color: rgb(136, 135, 135);
+}
+
+.addnew {
+    margin-top: 0px;
+}
+
+.layout-style {
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 8px;
+    width: 100%;
+}
+
+.spec-style {
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 8px;
+    width: 100%;
+}
+
+.drop-style {
+    height: 180px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 17px;
+    width: 100%;
+}
+
+.select-style {
+    height: 60px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 8px;
+    width: 100%;
+}
+
+.button-style {
+    height: 400px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+    width: 100%;
+}
+
+.background {
+    background-color: #E1E1E1;
+}
+
+
+/* .input-field{
+  color: white;
+} */
+
+
+/** Slider image */
+
+.slider-image {}
+
+
+/** Slider title format */
+
+.slider-title {
+    color: #fff;
+    font-weight: bold;
+    background-color: rgba(125, 125, 125);
+    padding: 8;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+
+/** Arrows */
+
+.arrow {
+    color: #ffffff;
+    font-size: 32;
+    vertical-align: middle;
+    padding: 10;
+}
+
+
+/** Arrow left wrapper */
+
+.arrow.arrow-left {}
+
+
+/** Arrow right */
+
+.arrow.arrow-right {}
+
+
+/* Slider CSS */
+
+.slide-1 {
+    background-color: darkslateblue;
+}
+
+.slide-2 {
+    background-color: darkcyan;
+}
+
+.slide-3 {
+    background-color: darkgreen;
+}
+
+.slide-4 {
+    background-color: darkgoldenrod;
+}
+
+.slide-5 {
+    background-color: darkslategray;
+}
+
+.slide-indicator-inactive {
+    background-color: #fff;
+    opacity: 0.4;
+    width: 10;
+    height: 10;
+    margin-left: 2.5;
+    margin-right: 2.5;
+    margin-top: 0;
+    border-radius: 5;
+}
+
+.slide-indicator-active {
+    background-color: #fff;
+    opacity: 0.9;
+    width: 10;
+    height: 10;
+    margin-left: 2.5;
+    margin-right: 2.5;
+    margin-top: 0;
+    border-radius: 5;
+}
+
+.slide-1 {
+    background-color: #448AFF;
+}
+
+.slide-2 {
+    background-color: #F44336;
+}
+
+.slide-3 {
+    background-color: #8BC34A;
+}
+
+.slide-4 {
+    background-color: #9C27B0;
+}
+
+.slide-5 {
+    background-color: #FFC107;
+}
+
+.slide-6 {
+    background-color: #448AFF;
+}
+
+.slide-7 {
+    background-color: #F44336;
+}
+
+.slide-8 {
+    background-color: #8BC34A;
+}
+
+.slide-9 {
+    background-color: #9C27B0;
+}
+
+.slide-10 {
+    background-color: #FFC107;
+}
+
+.slide-indicator-inactive {
+    background-color: #fff;
+    opacity: 0.4;
+    width: 10;
+    height: 10;
+    margin-left: 2.5;
+    margin-right: 2.5;
+    margin-top: 0;
+    border-radius: 5;
+}
+
+.slide-indicator-active {
+    background-color: #fff;
+    opacity: 0.9;
+    width: 10;
+    height: 10;
+    margin-left: 2.5;
+    margin-right: 2.5;
+    margin-top: 0;
+    border-radius: 5;
+}
+
+.slider-image {}
+
+
+/** Slider title format */
+
+.slider-title {
+    color: #fff;
+    font-weight: bold;
+    background-color: rgba(125, 125, 125);
+    padding: 8;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+
+/** Arrows */
+
+.arrow {
+    color: #ffffff;
+    font-size: 32;
+    vertical-align: middle;
+    padding: 10;
+}
+
+.botom-nav {
+    tab-active-color: green;
+    tab-inactive-color: #4C0001;
+    tab-background-color: blue;
+    tab-keyline-color: blue;
+}
+
+
+/** Arrow left wrapper */
+
+.arrow.arrow-left {}
+
+
+/** Arrow right */
+
+.arrow.arrow-right {}
+
+.home-panel {
+    vertical-align: center;
+    font-size: 20;
+    margin: 15;
+}
+
+.description-label {
+    margin-bottom: 15;
+}
+
+.border-primary,
+.border-warning,
+.border-danger,
+.border-info,
+.border-dark,
+.border-success {
+    border-width: 1.5;
+}
+
+.border-primary {
+    border-color: royalblue;
+}
+
+.border-info {
+    border-color: skyblue;
+}
+
+.border-warning {
+    border-color: orange;
+}
+
+.border-danger {
+    border-color: red;
+}
+
+.border-dark {
+    border-color: black;
+}
+
+.border-success {
+    border-color: greenyellow;
+}
+
+.bg-primary,
+.bg-info,
+.bg-success,
+.bg-danger {
+    color: #fff;
+}
+
+.bg-primary {
+    background-color: royalblue;
+}
+
+.bg-info {
+    background-color: skyblue;
+}
+
+.bg-warning {
+    background-color: orange;
+    color: #222222;
+}
+
+.bg-success {
+    background-color: greenyellow;
+}
+
+.bg-danger {
+    background-color: red;
+}
+
+.bg-white {
+    background-color: #ffffff;
+    color: #777777;
+}
+
+.text-white {
+    color: #FFFFFF;
+}
+
+.text-primary {
+    color: royalblue;
+}
+
+.text-info {
+    color: skyblue;
+}
+
+.text-dark {
+    color: black;
+}
+
+.text-warning {
+    color: orange;
+}
+
+.text-success {
+    color: greenyellow;
+}
+
+.text-danger {
+    color: red;
+}

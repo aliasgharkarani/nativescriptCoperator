@@ -1,0 +1,59 @@
+{
+  "_from": "nativescript-ngx-slides",
+  "_id": "nativescript-ngx-slides@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-Aed6IDgHNeqiGEWM2SDpEygt4Q8=",
+  "_location": "/nativescript-ngx-slides",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "nativescript-ngx-slides",
+    "name": "nativescript-ngx-slides",
+    "escapedName": "nativescript-ngx-slides",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-ngx-slides/-/nativescript-ngx-slides-1.0.0.tgz",
+  "_shasum": "01e77a20380735eaa218458cd920e913282de10f",
+  "_spec": "nativescript-ngx-slides",
+  "_where": "C:\\Cooper\\CooperSwitch",
+  "author": {
+    "name": "Josh Sommer",
+    "email": "joshdsommer@gmail.com",
+    "url": "https://twitter.com/_JoshSommer"
+  },
+  "bugs": {
+    "url": "https://github.com/TheOriginalJosh/nativescript-ngx-slides/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@angular/common": "~5.2.0",
+    "@angular/core": "~5.2.0",
+    "@angular/platform-browser": "~5.2.0",
+    "@angular/platform-browser-dynamic": "~5.2.0",
+    "nativescript-angular": "~5.2.0",
+    "tns-core-modules": "~3.4.0"
+  },
+  "deprecated": false,
+  "description": "NativeScript + Angular version of the slides",
+  "homepage": "https://github.com/TheOriginalJosh/nativescript-ngx-slides#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "nativescript-ngx-slides",
+  "nativescript": {
+    "tns-ios": {
+      "version": "2.4.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheOriginalJosh/nativescript-ngx-slides.git"
+  },
+  "version": "1.0.0"
+}

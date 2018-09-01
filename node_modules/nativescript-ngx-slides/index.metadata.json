@@ -1,0 +1,1 @@
+[{"__symbolic":"module","version":4,"metadata":{},"exports":[{"from":"./slides.module","export":["SlidesModule"]},{"from":"./slide/slide.component"},{"from":"./slides/slides.component"}]}]

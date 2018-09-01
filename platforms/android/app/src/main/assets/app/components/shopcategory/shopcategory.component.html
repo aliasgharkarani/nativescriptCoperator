@@ -1,0 +1,208 @@
+<ActionBar title="MACRO STATIION" style="background-color:black;">
+
+    <GridLayout col="1">
+        <GridLayout row="0" columns="*,auto,auto">
+
+
+            <GridLayout col="2">
+                <Label class="fa" [text]="'fa-bell' | fonticon" horizontalAlignment="right" style=" margin-top:30px; margin-bottom:3px; margin-right:35px; color:white; font-size:20px"></Label>
+
+            </GridLayout>
+        </GridLayout>
+    </GridLayout>
+</ActionBar>
+
+
+<GridLayout #background scaleX="1.4" caleY="1.4" class="background" (loaded)="startBackgroundAnimation(background)"></GridLayout>
+
+<!--                           
+<ScrollView>
+        <StackLayout margin="10" verticalAlignment="center">
+            <StackLayout class="form" padding="15">
+                    <Label text="Categories" fontSize="18" verticalAlignment="bottom"></Label>  
+                
+    
+        
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+     -->
+
+
+
+<ScrollView>
+    <StackLayout marginTop="15" orientation="vertical">
+
+        <StackLayout class="form" padding="5">
+
+
+            <StackLayout class="input-field">
+                <!-- <GridLayout columns="*, auto, auto" rows="auto, *" >
+                            <Label col="0" marginLeft="20px" text="Categories" style="color:black" class="label font-weight-bold m-b-5"></Label>
+                            <GridLayout rows="*, *,*,*,*,*" columns="*, *" row="1" >
+                                    <StackLayout col="0"  row="0" style="background-color: white" class="input-field"> 
+                                            <GridLayout columns="*, *" >
+                                                    
+                                                    <Image col="1" src="~/assets/images/categories/phones_p.png" style="width: 50;height: 50;background-repeat: no-repeat;background-size: contain;border:2px solid #021a40
+                                                    " ></Image>
+                                                    <Label  textWrap="true"  col="0" marginLeft="20px" text="Phones & Accessories" style="color:black" class="label font-weight-bold m-b-5"></Label>
+                                     
+                                                </GridLayout>
+                                        </StackLayout>  
+                                      <StackLayout style="background-color: white"  col="1"  row="0"  class="input-field">  
+                                            <GridLayout columns="*, *" >
+                                                    
+                                                    <Image col="1" src="~/assets/images/categories/beauty_p.png" style="width: 50;height: 50;background-repeat: no-repeat;background-size: contain;border:2px solid #021a40
+                                                    " ></Image>
+                                                    <Label  textWrap="true"  col="0" marginLeft="20px" text="Beauty, Hair & Cosmetics" style="color:black" class="label font-weight-bold m-b-5"></Label>
+                                     
+                                                </GridLayout>
+                                           </StackLayout>
+                                           
+                                           <StackLayout col="0"  row="1" class="input-field" style="background-color: white"  >
+                                             
+                                                <GridLayout columns="*, *" >
+                                                    
+                                                        <Image col="1" src="~/assets/images/categories/electronics_p.png" style="width: 50;height: 50;background-repeat: no-repeat;background-size: contain;border:2px solid #021a40
+                                                        " ></Image>
+                                                        <Label  textWrap="true"  col="0" marginLeft="20px" text="Electronics and Gadgets" style="color:black" class="label font-weight-bold m-b-5"></Label>
+                                         
+                                                    </GridLayout>
+                                        
+                                        </StackLayout>
+
+                                        <StackLayout col="1"  row="1" class="input-field" style="background-color: white"  >
+                                             
+                                                <GridLayout columns="*, *" >
+                                                    
+                                                        <Image col="1" src="~/assets/images/categories/jewelries_p.png" style="width: 50;height: 50;background-repeat: no-repeat;background-size: contain;border:2px solid #021a40
+                                                        " ></Image>
+                                                        <Label  textWrap="true"  col="0" marginLeft="20px" text="Jewelries" style="color:black" class="label font-weight-bold m-b-5"></Label>
+                                         
+                                                    </GridLayout>
+                                        
+                                        </StackLayout>
+
+                                        <StackLayout col="0"  row="2" class="input-field" style="background-color: white"  >
+                                             
+                                                <GridLayout columns="*, *" >
+                                                    
+                                                        <Image col="1" src="~/assets/images/categories/computers_p.png" style="width: 50;height: 50;background-repeat: no-repeat;background-size: contain;border:2px solid #021a40
+                                                        " ></Image>
+                                                        <Label  textWrap="true"  col="0" marginLeft="20px" text="Computers and Gadgets" style="color:black" class="label font-weight-bold m-b-5"></Label>
+                                         
+                                                    </GridLayout>
+                                        
+                                        </StackLayout>
+
+                                        <StackLayout col="1"  row="2" class="input-field" style="background-color: white"  >
+                                             
+                                                <GridLayout columns="*, *" >
+                                                    
+                                                        <Image col="1" src="~/assets/images/categories/sport_p.png" style="width: 50;height: 50;background-repeat: no-repeat;background-size: contain;border:2px solid #021a40
+                                                        " ></Image>
+                                                        <Label  textWrap="true"  col="0" marginLeft="20px" text="Sports and Fitness" style="color:black" class="label font-weight-bold m-b-5"></Label>
+                                         
+                                                    </GridLayout>
+                                        
+                                        </StackLayout>
+
+
+                                        <StackLayout col="0"  row="3" class="input-field" style="background-color: white"  >
+                                             
+                                                <GridLayout columns="*, *" >
+                                                    
+                                                        <Image col="1" src="~/assets/images/categories/clothes_p.png" style="width: 50;height: 50;background-repeat: no-repeat;background-size: contain;border:2px solid #021a40
+                                                        " ></Image>
+                                                        <Label  textWrap="true"  col="0" marginLeft="20px" text="Clothes" style="color:black" class="label font-weight-bold m-b-5"></Label>
+                                         
+                                                    </GridLayout>
+                                        
+                                        </StackLayout>
+
+                                        <StackLayout col="1"  row="3" class="input-field" style="background-color: white"  >
+                                             
+                                                <GridLayout columns="*, *" >
+                                                    
+                                                        <Image col="1" src="~/assets/images/categories/home_p.png" style="width: 50;height: 50;background-repeat: no-repeat;background-size: contain;border:2px solid #021a40
+                                                        " ></Image>
+                                                        <Label  textWrap="true"  col="0" marginLeft="20px" text="Home and Kitchen" style="color:black" class="label font-weight-bold m-b-5"></Label>
+                                         
+                                                    </GridLayout>
+                                        
+                                        </StackLayout>
+
+                                        <StackLayout col="0"  row="4" class="input-field" style="background-color: white"  >
+                                             
+                                                <GridLayout columns="*, *" >
+                                                    
+                                                        <Image col="1" src="~/assets/images/categories/shoes_p.png" style="width: 50;height: 50;background-repeat: no-repeat;background-size: contain;border:2px solid #021a40
+                                                        " ></Image>
+                                                        <Label  textWrap="true"  col="0" marginLeft="20px" text="Shoes" style="color:black" class="label font-weight-bold m-b-5"></Label>
+                                         
+                                                    </GridLayout>
+                                        
+                                        </StackLayout>
+
+                                        <StackLayout col="1"  row="4" class="input-field" style="background-color: white"  >
+                                             
+                                                <GridLayout columns="*, *" >
+                                                    
+                                                        <Image col="1" src="~/assets/images/categories/office_p.png" style="width: 50;height: 50;background-repeat: no-repeat;background-size: contain;border:2px solid #021a40
+                                                        " ></Image>
+                                                        <Label  textWrap="true"  col="0" marginLeft="20px" text="Office Equipments" style="color:black" class="label font-weight-bold m-b-5"></Label>
+                                         
+                                                    </GridLayout>
+                                        
+                                        </StackLayout>
+
+                                        <StackLayout col="0"  row="5" class="input-field" style="background-color: white"  >
+                                             
+                                                <GridLayout columns="*, *" >
+                                                    
+                                                        <Image col="1" src="~/assets/images/categories/food_p.png" style="width: 50;height: 50;background-repeat: no-repeat;background-size: contain;border:2px solid #021a40
+                                                        " ></Image>
+                                                        <Label  textWrap="true"  col="0" marginLeft="20px" text="Food & Beverages" style="color:black" class="label font-weight-bold m-b-5"></Label>
+                                         
+                                                    </GridLayout>
+                                        
+                                        </StackLayout>
+
+                                        <StackLayout col="1"  row="5" class="input-field" style="background-color: white"  >
+                                             
+                                                <GridLayout columns="*, *" >
+                                                    
+                                                        <Image col="1" src="~/assets/images/categories/health_p.png" style="width: 50;height: 50;background-repeat: no-repeat;background-size: contain;border:2px solid #021a40
+                                                        " ></Image>
+                                                        <Label  textWrap="true"  col="0" marginLeft="20px" text="Health" style="color:black" class="label font-weight-bold m-b-5"></Label>
+                                         
+                                                    </GridLayout>
+                                        
+                                        </StackLayout>
+                                </GridLayout>
+                        </GridLayout> -->
+
+                <GridLayout class="page">
+                    <GridView [items]="categories" colWidth="49%" rowHeight="60" style="background-color: #e1e1e1">
+                        <ng-template let-item="item" let-odd="odd">
+                            <StackLayout margin="2" [nsRouterLink]="['/shopcatalogue', item._id]" borderColor="white" borderWidth="2" borderRadius="5" verticalAlignment="stretch" class="list-group-item" [class.odd]="odd">
+
+                                <GridLayout columns="*, *" style="background-color: #ffffff">
+
+                                    <Image col="1" src="{{productImageUrl}}{{item.imagePath}}" style="padding-top:12px;width: 50;height: 50;background-repeat: no-repeat;background-size: contain;border:2px solid #021a40
+                                                "></Image>
+                                    <Label textWrap="true" col="0" marginLeft="20px" [text]="item.categoryName" style="color:black" class="label font-weight-bold m-b-5"></Label>
+
+
+                                </GridLayout>
+
+                            </StackLayout>
+                        </ng-template>
+                    </GridView>
+                </GridLayout>
+
+
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ScrollView>

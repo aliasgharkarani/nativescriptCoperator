@@ -1,0 +1,93 @@
+<ActionBar style="background-color:black">
+
+
+    <NavigationButton text="Go Back" col="0" android.systemIcon="ic_menu_back" (tap)="navigateBack()"></NavigationButton>
+
+    <GridLayout row="0" columns="*,auto,auto">
+
+        <GridLayout col="1">
+            <Label class="fa" [text]="'fa-bell' | fonticon" horizontalAlignment="right" style=" margin-top:30px; margin-bottom:3px; margin-right:35px; color:white; font-size:20px"></Label>
+
+        </GridLayout>
+        <GridLayout col="2">
+            <Label class="fa" [text]="'fa-cart-plus' | fonticon" horizontalAlignment="right" style=" margin-top:30px; margin-bottom:3px; margin-right:35px; color:white; font-size:20px"></Label>
+
+        </GridLayout>
+    </GridLayout>
+</ActionBar>
+<GridLayout #background scaleX="1.4" scaleY="1.4" class="background" (loaded)="startBackgroundAnimation(background)"></GridLayout>
+
+
+<StackLayout>
+    <GridLayout rows="*,auto,auto">
+        <GridLayout row="0">
+            <ListView [items]="cartProducts" class="list-group">
+                <ng-template let-dataitem="item" let-i="index">
+                    <StackLayout class="layout-style">
+
+                        <Label textWrap="true" horizontalAlignment="left" marginTop="5" marginRight="15" text="Sold by P" class="h5 description-label"></Label>
+                        <StackLayout>
+
+                            <GridLayout columns="110,*">
+                                <Image col="0" class="avatar avatar--largeCircle" src="{{productImageUrl}}{{dataitem.productImage}}"></Image>
+                                <StackLayout col="1" style="padding-left:10px">
+                                    <Label textWrap="true" horizontalAlignment="left" [text]="dataitem.productName" class="h3 description-label"></Label>
+                                    <Label textWrap="true" horizontalAlignment="left" [text]="dataitem.amount | currency:'NGN':'symbol-narrow':'4.2-2'" class="h3 description-label" style="font-weight:bold"></Label>
+
+                                    <GridLayout columns="auto,60,*">
+                                        <Label col="0" textWrap="true" horizontalAlignment="left" marginTop="5" marginRight="15" [text]="dataitem.qty" class="h5 description-label"></Label>
+                                        <DropDown col="1" #dd [items]="dataitem.qtyList" [(ngModel)]="dataitem.selectedQtyIndex" hint="" (selectedIndexChanged)="onqtychange($event,dataitem)" style="font-size:14px; padding:25px"></DropDown>
+                                        <GridLayout col="2" (tap)="removefromCart(dataitem)">
+
+                                            <Label class="fa" [text]="'fa-trash-o' | fonticon" horizontalAlignment="right" style=" color:red; font-size:20px;margin-right:40px"></Label>
+
+                                            <!-- <DropDown #dd [items]="cooperativeList" [(ngModel)]="selectedCooperativeIndex" [hint]="hint" (selectedIndexChanged)="oncooperativechange($event)" style="font-size:14px; "></DropDown> -->
+
+                                        </GridLayout>
+                                    </GridLayout>
+
+                                </StackLayout>
+                            </GridLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                </ng-template>
+            </ListView>
+        </GridLayout>
+        <GridLayout row="1" rows="auto,auto">
+            <GridLayout row="0">
+                <StackLayout horizontalAlignment="left" style="width:100%">
+                    <DropDown #dd [items]="cooperativeList" [(ngModel)]="selectedCooperativeIndex" hint="Delivery Address" (selectedIndexChanged)="oncooperativechange($event)" style="font-size:14px; width:100%"></DropDown>
+                </StackLayout>
+            </GridLayout>
+            <GridLayout row="1">
+                <StackLayout orientation="horizontal">
+                    <CheckBox #CB1 horizontalAlignment="left" marginRight="5" checked="true"></CheckBox>
+
+                    <Label textWrap="true" text="Scan the QR code with your mobile device and watch the changes sync live while you play with the code." class="h4 description-label"></Label>
+                </StackLayout>
+            </GridLayout>
+        </GridLayout>
+        <GridLayout row="2" rows="auto,auto,auto">
+            <GridLayout row="0">
+                <StackLayout horizontalAlignment="left">
+                    <Label textWrap="true" marginLeft="20" marginTop="15" text="Order Total {{totalSelectedAmount | currency:'NGN':'symbol-narrow':'4.2-2' }}" class="h4 description-label" style="font-weight:bold"></Label>
+                </StackLayout>
+            </GridLayout>
+            <GridLayout row="1">
+                <StackLayout orientation="horizontal" marginTop="15">
+                    <Label textWrap="true" marginRight="20" text="Select Cooperative " class="h4 description-label"></Label>
+
+
+                    <DropDown #dd [items]="cooperativeList" [(ngModel)]="selectedCooperativeIndex" hint="COOPLAG" (selectedIndexChanged)="oncooperativechange($event)" style="font-size:15px; font-weight:bold; "></DropDown>
+                </StackLayout>
+            </GridLayout>
+            <GridLayout row="2">
+                <StackLayout orientation="horizontal" marginTop="10">
+                    <Button class="btn btn-primary w-full" text="Pay" (tap)="pay()"></Button>
+
+                </StackLayout>
+            </GridLayout>
+        </GridLayout>
+    </GridLayout>
+</StackLayout>

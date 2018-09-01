@@ -1,0 +1,63 @@
+<ActionBar title="MACRO STATIION" style="background-color:black;">
+
+    <GridLayout col="1">
+        <GridLayout row="0" columns="*,auto,auto">
+
+
+            <GridLayout col="2">
+                <Label class="fa" [text]="'fa-bell' | fonticon" horizontalAlignment="right" style=" margin-top:30px; margin-bottom:3px; margin-right:35px; color:white; font-size:20px"></Label>
+
+            </GridLayout>
+        </GridLayout>
+    </GridLayout>
+</ActionBar>
+
+
+<GridLayout #background scaleX="1.0" scaleY="1.0" class="background"></GridLayout>
+
+<ScrollView>
+    <StackLayout margin="15" verticalAlignment="top">
+        <StackLayout class="form" padding="15">
+
+            <Label text="Initial Payment" fontSize="20" verticalAlignment="bottom"></Label>
+
+            <GridLayout #updateBio columns="auto, *" rows="20, auto, auto, auto, auto, auto, auto, auto " class="page">
+
+
+                <Label text="Cooper ID:" row="1" col="0" fontSize="18" verticalAlignment="bottom"></Label>
+                <TextField hint="" row="1" col="1">
+                </TextField>
+
+                <Label text="Price(N):" row="2" col="0" fontSize="18" verticalAlignment="bottom"></Label>
+                <TextField hint="" row="2" col="1"></TextField>
+
+            </GridLayout>
+
+
+            <StackLayout>
+                <GridLayout row="0" columns="*,auto,auto">
+                    <!-- <label col="0" text="Category"></label> -->
+                    <GridLayout columns="*">
+                        <DropDown #dd col="1" [items]="cooperativeList" [(ngModel)]="selectedCooperativeIndex" [hint]="hint" (selectedIndexChanged)="oncooperativechange($event)"></DropDown>
+
+                    </GridLayout>
+                </GridLayout>
+
+                <GridLayout row="0" columns="*,auto,auto">
+                    <!-- <label col="0" text="Category"></label> -->
+                    <GridLayout columns="*">
+                        <DropDown #dd col="1" [items]="cooperativeList" [(ngModel)]="selectedCooperativeIndex" [hint]="hint" (selectedIndexChanged)="oncooperativechange($event)"></DropDown>
+
+                    </GridLayout>
+                </GridLayout>
+
+
+            </StackLayout>
+
+
+
+            <Button class="btn btn-primary" text="Send" (tap)="pay()"></Button>
+        </StackLayout>
+    </StackLayout>
+
+</ScrollView>

@@ -1,0 +1,27 @@
+<GridLayout #background scaleX="1.4" scaleY="1.4" class="background" (loaded)="startBackgroundAnimation(background)">
+</GridLayout>
+
+
+<ScrollView>
+    <StackLayout margin="0.1" verticalAlignment="center" rows="auto" margin="20">
+        <GridLayout verticalAlignment="center" column="80" rows="auto, auto, auto" >
+           
+            <Image  src="res://secured"  stretch="aspectFit" class="initial-logo" style="width: 30%;"></Image>
+            <Label row="1" col="0" class="createdOn text-center" horizontalAlignment="center" textWrap="true" text="Account Secured"
+                style="font-size: 18px; color: #B7C901; margin-top: 30em;"></Label>
+                <Label row="2" col="0" class="createdOn text-center" horizontalAlignment="center" textWrap="true" text="You are all set. Thank you securing your app within purchases. You will be prompted to enter transaction key once you processed through checkout."
+                    style="font-size: 16px; margin-top: 10em;"></Label>
+        </GridLayout>
+
+
+       
+
+
+    </StackLayout>
+
+    <!-- <StackLayout class="p-20">
+        <Button text="Success" (tap)="showSuccess()" class="btn btn-primary btn-active"></Button>
+        <Button text="Error" (tap)="showError()" class="btn btn-primary btn-active"></Button>
+        <Button text="Custom Image" (tap)="showCustomImage()" class="btn btn-primary btn-active"></Button>
+    </StackLayout> -->
+</ScrollView>

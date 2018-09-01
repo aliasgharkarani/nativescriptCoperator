@@ -1,0 +1,246 @@
+<!-- <ActionBar title="CooperSwitch" android.icon="res://icon" android.iconVisibility="always"></ActionBar> -->
+<ActionBar style="background-color:black">
+
+    <GridLayout rows="*" columns="40,*,70">
+
+
+        <GridLayout col="0">
+            <Label class="fa" [text]="'fa-arrow-left' | fonticon" horizontalAlignment="left" style="margin-left: 3em;  color:white; font-size:20px"></Label>
+
+        </GridLayout>
+
+        <GridLayout col="1">
+            <Image src="res://home_logo" style="width: 60%;" class="initial-logo"></Image>
+
+        </GridLayout>
+        <GridLayout col="2" [nsRouterLink]="['/mycart']" columns="*,*">
+            <Label col="0" class="fa" [text]="'fa-bell' | fonticon" horizontalAlignment="left" style="  color:white; font-size:20px"></Label>
+            <Label col="1" class="fa" [text]="'fa-search' | fonticon" style=" color:white; font-size:20px"></Label>
+
+        </GridLayout>
+    </GridLayout>
+
+</ActionBar>
+
+
+<StackLayout>
+
+    <GridLayout rows="*" height="70" columns="*" style="background-color: black; color: white;">
+  <GridLayout col="0">
+
+    <Image src="res://profile_pix" style="width: 30%; " class="initial-logo"></Image>
+
+  </GridLayout>
+<GridLayout col="0">
+
+  
+<Label class="fa" [text]="'fa-camera' | fonticon"   style="color:white; text-align: center; margin-top: 25em; margin-left: 55em; font-size:20px"></Label>
+
+</GridLayout>
+    </GridLayout>
+   
+
+
+    <GridLayout rows="*,auto" style="background-color: #EFEFEF;">
+        <ScrollView>
+
+            <GridLayout row="0" marginright="15" marginleft="15">
+<CardView class="cardStyle" margin="3" elevation="10" radius="1">
+            <GridLayout  rows="*,*,*,*,*" >
+               
+
+                <GridLayout row="0">
+                    
+
+                        <GridLayout row="0" rows="*,*,*,*,*,*,*,*" margin="15">
+
+                            <GridLayout row="0" columns="50,*">
+                            <Button col="0" horizontalAlignment="left"  class="fa" [text]="'fa-user' | fonticon" style="width:37;height:37;color:black;border-radius:100;border-width:2;border-color:#F7CC96;background-color:white; font-size: 16em; ">
+                            </Button>
+                                <Label col="1" class="createdOn text-left" margintop="10" horizontalAlignment="left" textWrap="true" text="Personal" style="font-size: 18em; color: black;  font-family: Mont; font-weight: bold;"></Label>
+
+                            </GridLayout>
+
+                            <GridLayout row="1" rows="*,*" margintop="10" marginleft="50">
+                            
+                                <Label row="0" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Sanusi Lamido " style="font-size: 16em; color: black;  font-family: Mont;  line-height: 1.2;"></Label>
+                            
+                           
+
+                            <StackLayout row="1" class="arrow" margintop="20" >
+                                <Image src="res://line" class="initial-logo" horizontalAlignment="left"></Image>
+                            </StackLayout>
+                            </GridLayout>
+                            
+
+
+                            <GridLayout row="2" rows="*,*" margintop="10" marginleft="50">
+                            
+                                <Label row="0" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="sanusilamido2018@gmail.com " style="font-size: 16em; color: black;  font-family: Mont;  line-height: 1.2; "></Label>
+                            
+                            
+                            
+                                <StackLayout row="1" class="arrow" margintop="20">
+                                    <Image src="res://line" class="initial-logo" horizontalAlignment="left"></Image>
+                                </StackLayout>
+                            </GridLayout>
+
+
+                            <GridLayout row="3" rows="*,*" margintop="10" marginleft="50">
+                            
+                                <Label row="0" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="+234 904 345 65"
+                                    style="font-size: 16em; color: black;  font-family: Mont;  line-height: 1.2; "></Label>
+                            
+                            
+                            
+                                <StackLayout row="1" class="arrow" margintop="20">
+                                    <Image src="res://line" class="initial-logo" horizontalAlignment="left"></Image>
+                                </StackLayout>
+                            </GridLayout>
+                    
+                    <GridLayout row="4" columns="50,*">
+                        <Button col="0" horizontalAlignment="left" class="fa" [text]="'fa-briefcase' | fonticon" style="width:37;height:37;color:black;border-radius:100;border-width:2;border-color:#F7CC96;background-color:white; font-size: 16em; ">
+                        </Button>
+                        <Label col="1" class="createdOn text-left" margintop="10" horizontalAlignment="left" textWrap="true" text="Business" style="font-size: 18em; color: black;  font-family: Mont; font-weight: bold;"></Label>
+                    
+                    </GridLayout>
+                            
+
+                        <GridLayout row="5" columns="*,75" margintop="10" marginleft="50">
+                            <GridLayout row="0" rows="*,*">
+                                <Label col="0" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Sanusi Lamido " style="font-size: 16em; color: black;  font-family: Mont;  line-height: 1.2; font-weight: bold;"></Label>
+                        
+                                <Label row="1" margintop="5" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="18A First Floor Sector 115, urclave Enclave, Greater Mohali, Nigeria"
+                                    style="font-size: 12em; color: black;  font-family: Mont;  line-height: 1.2;"></Label>
+                        
+                            </GridLayout>
+                        
+                            <GridLayout col="1" columns="*,*">
+                        <Image col="0" src="res://edit" class="initial-logo" horizontalAlignment="left" style="width: 30%;"></Image>
+                                <Image col="1" src="res://delete" class="initial-logo" horizontalAlignment="right" style="width: 30%;"></Image>
+                        
+                            </GridLayout>
+                        
+                        
+                        </GridLayout>
+
+
+                            <StackLayout row="6" class="arrow" margintop="10">
+                                <Image src="res://arrow" class="initial-logo" horizontalAlignment="left"></Image>
+                            </StackLayout>
+
+                            <GridLayout row="7" columns="*,70" margintop="10">
+                                <GridLayout col="0">
+
+                                    <Button horizontalAlignment="right" text="ButtonCircle" class="fa" [text]="'fa-plus' | fonticon" style="width:37;height:37;color:black;border-radius:100;border-width:2;border-color:#F7CC96;background-color:white; font-size: 14em; text-align: center;">
+                                    </Button>
+                                </GridLayout>
+
+                                <GridLayout col="1">
+
+                                    <Label row="0" marginleft="10" margintop="10" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Add New"
+                                        style="font-size: 18em; color: black;  font-family: Mont; font-weight: bold;"></Label>
+
+                                </GridLayout>
+
+
+                            </GridLayout>
+
+
+
+                        </GridLayout>
+
+                  
+                </GridLayout>
+
+
+                <GridLayout row="1" marginleft="50">
+                 
+
+                        <GridLayout row="0" rows="*,*,*,*,*,*" marginright="15">
+
+                            <GridLayout row="0" rows="30,*,*">
+                                <Label row="0" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Cooperatives" style="font-size: 18em; color: black;  font-family: Mont; font-weight: bold;"></Label>
+
+                            </GridLayout>
+
+                            <StackLayout row="1" class="arrow" margintop="10">
+                                <Image src="res://arrow" class="initial-logo" horizontalAlignment="left"></Image>
+                            </StackLayout>
+                            <GridLayout row="2"  margintop="10">
+
+                                <Label  class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Cooperative" style="font-size: 16em; color: black;  font-family: Mont;  line-height: 1.2;"></Label>
+
+                             
+
+                            </GridLayout>
+
+                            <GridLayout row="3" columns="*,70" margintop="10">
+                                <GridLayout col="0">
+
+                                    <Label class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Best Buy Nigeria Inc" style="font-size: 16em; color: black;  font-family: Mont;  line-height: 1.2;"></Label>
+
+                                </GridLayout>
+
+                                <GridLayout col="1">
+
+                                    <Image col="1" src="res://delete" class="initial-logo" horizontalAlignment="right" style="width: 30%;"></Image>
+                                </GridLayout>
+
+
+                            </GridLayout>
+
+
+                            <StackLayout row="4" class="arrow" margintop="10">
+                                <Image src="res://arrow" class="initial-logo" horizontalAlignment="left"></Image>
+                            </StackLayout>
+
+
+
+                            <GridLayout row="5" columns="*,auto" margintop="10">
+                                <GridLayout col="0">
+
+                                    <Button horizontalAlignment="right" text="ButtonCircle" class="fa" [text]="'fa-plus' | fonticon" style="width:37;height:37;color:black;border-radius:100;border-width:2;border-color:#F7CC96;background-color:white; font-size: 14em; text-align: center;">
+                                    </Button>
+                                </GridLayout>
+
+                                <GridLayout col="1">
+
+                                    <Label row="0" marginleft="10" margintop="10" class="createdOn text-left" horizontalAlignment="right" textWrap="true" text="Select Cooperative"
+                                        style="font-size: 16em; color: black;  font-family: Mont; font-weight: bold;"></Label>
+
+                                </GridLayout>
+
+
+                            </GridLayout>
+
+
+
+                        </GridLayout>
+
+                </GridLayout>
+
+                <GridLayout row="2" rows="80" marginleft="50" marginright="20">
+                  
+                        <Button [nsRouterLink]="['/register']" class="btn btn-primary w-full loginbutton" text="UPDATE PROFILE" (tap)="login()"></Button>
+                </GridLayout>
+
+
+            </GridLayout>
+
+
+</CardView>
+</GridLayout>
+        </ScrollView>
+        <GridLayout row="1">
+<BottomNavigation activeColor="white" inactiveColor="white" backgroundColor="#FF7800" keyLineColor="black" (tabSelected)="onBottomNavigationTabSelected($event)"
+    row="1">
+    <BottomNavigationTab title="Home" icon="home"></BottomNavigationTab>
+    <BottomNavigationTab title="Transactions" icon="transaction"></BottomNavigationTab>
+    <BottomNavigationTab title="Shop" icon="shop"></BottomNavigationTab>
+    <BottomNavigationTab title="My Account" icon="user"></BottomNavigationTab>
+</BottomNavigation>
+
+        </GridLayout>
+    </GridLayout>
+</StackLayout>

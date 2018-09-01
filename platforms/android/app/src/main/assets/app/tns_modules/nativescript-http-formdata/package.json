@@ -1,0 +1,59 @@
+{
+  "_from": "nativescript-http-formdata",
+  "_id": "nativescript-http-formdata@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-Xmc/3+vVkWpnEogTiq4G4CxPLV5Nk/K7TSUenZ1TLkyE+lU9sqTcW3Ra1AAEshqWaiqgHAKf+/OwnSVyzIj2Ng==",
+  "_location": "/nativescript-http-formdata",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "nativescript-http-formdata",
+    "name": "nativescript-http-formdata",
+    "escapedName": "nativescript-http-formdata",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-http-formdata/-/nativescript-http-formdata-1.0.0.tgz",
+  "_shasum": "6bf1f5fc2d5f32d0952e899a3dd5a2e963cf3e0f",
+  "_spec": "nativescript-http-formdata",
+  "_where": "C:\\Cooper\\CooperSwitch",
+  "author": {
+    "name": "Idrees Khan"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Android work is in progress.",
+  "devDependencies": {
+    "tns-core-modules": "^3.4.0",
+    "tns-platform-declarations": "^3.4.0",
+    "typescript": "~2.7.1"
+  },
+  "keywords": [
+    "background",
+    "http",
+    "upload",
+    "multipart",
+    "formdata",
+    "NativeScript"
+  ],
+  "license": "Apache-2.0",
+  "main": "TNSHttpFormData",
+  "name": "nativescript-http-formdata",
+  "nativescript": {
+    "platforms": {
+      "ios": "3.0.0"
+    }
+  },
+  "scripts": {
+    "build": "npm i && tsc",
+    "prepack": "tsc"
+  },
+  "typings": "index.d.ts",
+  "version": "1.0.0"
+}

@@ -1,0 +1,105 @@
+<!-- <ActionBar title="CooperSwitch" android.icon="res://icon" android.iconVisibility="always"></ActionBar> -->
+<ActionBar style="background-color:black">
+
+
+    <NavigationButton text="Go Back" col="0" android.systemIcon="ic_menu_back" tap="onNavBtnTap" style="font-size: 12px;" (tap)="navigateBack()"></NavigationButton>
+
+</ActionBar>
+<GridLayout #background scaleX="1.4" scaleY="1.4" class="background" (loaded)="startBackgroundAnimation(background)"></GridLayout>
+
+
+<StackLayout>
+
+
+
+
+
+
+
+    <GridLayout margin="0.1" rows="180,auto,auto">
+
+        <GridLayout row="0" columns="160,10,*" rows="*" margintop="50" paddingright="30" paddingleft="30">
+            <Label row="0" col="0" [nsRouterLink]="['/register']" marginright="15" text="Register as a Cooperator" horizontalAlignment="left" textWrap="true" style="color: #ff9000; font-size: 13em; "></Label>
+            <Label row="0" col="1" text="|" horizontalAlignment="center" textWrap="true" style="color:#851212; font-size: 15;"></Label>
+            <Label row="0" col="2" [nsRouterLink]="['/vendor']" text="Register as a Vendor" horizontalAlignment="right" textWrap="true" style="color:white; font-size: 13em;"></Label>
+
+
+        </GridLayout>
+
+
+        <GridLayout row="1" rows="auto,auto,auto" class="form" paddingright="30" paddingleft="30">
+
+
+            <GridLayout row="0" rows="auto,auto,auto">
+
+                <!-- <Label text="Enter Cooper ID" class="label font-weight-bold m-b-5"></Label>
+                <Label class="fa" [text]="'fa-sign-in' | fonticon"></Label> -->
+                <GridLayout row="0" columns="40,*" class="input-field">
+                    <Image col="0" src="res://email" class="initial-logo" marginright="20" horizontalAlignment="left" style=" color:white; font-size:20px"></Image>
+
+                    <TextField #cooperatoremail="ngModel" col="1" hint="Enter Email" class="input border-bottom" [(ngModel)]="staffId" required email></TextField>
+
+
+                </GridLayout>
+
+
+
+                <!-- <Label text="Password" class="label font-weight-bold m-b-5"></Label> -->
+                <GridLayout row="1" columns="40,*" class="input-field">
+
+                    <Image col="0" src="res://cooperative" class="initial-logo" marginright="20" horizontalAlignment="left" style=" color:white; font-size:20px" padding-bottom: 5px;></Image>
+
+                    <!-- <TextField col="1" hint="Enter Password" secure="true" class="input border-bottom" [(ngModel)]="password"></TextField> -->
+
+
+                    <DropDown #dd col="1" [items]="cooperativeList" class="drop-bottom" [(ngModel)]="selectedCooperativeIndex" [hint]="hint" (selectedIndexChanged)="oncooperativechange($event)" style="font-size:14px;padding:20px;color:black "></DropDown>
+
+                </GridLayout>
+
+                <GridLayout row="2" columns="40,*" class="input-field">
+                    <Image col="0" src="res://phonee" class="initial-logo" marginright="20" horizontalAlignment="left" style=" color:white; font-size:20px"></Image>
+
+                    <TextField #cooperatoremail="ngModel" col="1" hint="Enter Phone number" class="input border-bottom" [(ngModel)]="staffId" required email></TextField>
+
+
+                </GridLayout>
+
+            </GridLayout>
+
+            <GridLayout row="1" columns="40,*" margintop="20">
+                <Button col="1" isEnabled="{{cooperatoremail.valid }}" class="btn btn-primary w-full loginbutton" text="REGISTER" (tap)="register()"></Button>
+
+
+            </GridLayout>
+
+
+            <GridLayout row="2" rows="*" columns="40,*,*" style="margin-top:20px;">
+                <Label row="0" col="1" text="Already Have Account?" horizontalAlignment="left" textWrap="true" style="color:white; font-size: 13em;"></Label>
+                <Label row="0" col="2" [nsRouterLink]="['/login']" text="Login Here" horizontalAlignment="right" textWrap="true" style="color:#ff9000; font-size: 13em;"></Label>
+
+
+            </GridLayout>
+
+
+
+
+        </GridLayout>
+        <GridLayout row="2" class="form" padding="15">
+
+
+
+
+        </GridLayout>
+
+    </GridLayout>
+
+
+
+    <!-- <StackLayout class="p-20">
+        <Button text="Success" (tap)="showSuccess()" class="btn btn-primary btn-active"></Button>
+        <Button text="Error" (tap)="showError()" class="btn btn-primary btn-active"></Button>
+        <Button text="Custom Image" (tap)="showCustomImage()" class="btn btn-primary btn-active"></Button>
+    </StackLayout> -->
+
+
+</StackLayout>

@@ -1,0 +1,37 @@
+.avatar {
+    border-width: 0;
+    border-color: rgb(254, 204, 22);
+    border-radius: 40;
+    height: 80;
+    width: 80;
+}
+
+.avatar--small {
+    height: 40;
+    width: 40;
+    border-radius: 20;
+    border-width: 2;
+}
+
+.avatar--medium {
+    height: 60;
+    width: 60;
+    border-radius: 0;
+}
+
+.avatar--largeCircle {
+    border-color: #0084A9;
+}
+
+.avatar--big {
+    height: 180;
+    width: 170;
+    border-radius: 0;
+}
+
+.avatar--scanCircle {
+    height: 140;
+    width: 130;
+    border-radius: 18;
+    border-color: #0084A9;
+}

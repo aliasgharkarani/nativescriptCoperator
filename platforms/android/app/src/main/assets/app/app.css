@@ -1,0 +1,103 @@
+/*
+In NativeScript, the app.css file is where you place CSS rules that
+you would like to apply to your entire application. Check out
+http://docs.nativescript.org/ui/styling for a full list of the CSS
+selectors and properties you can use to style UI components.
+
+/*
+In many cases you may want to use the NativeScript core theme instead
+of writing your own CSS rules. For a full list of class names in the theme
+refer to http://docs.nativescript.org/ui/theme.
+*/
+
+@import '~nativescript-theme-core/css/core.light.css';
+@import url("assets/cssnew/actionbar.css");
+@import url("assets/cssnew/avatar.css");
+.font-awesome {
+    font-family: "FontAwesome";
+}
+
+.fa {
+    font-family: FontAwesome, fontawesome-webfont;
+}
+
+.default {
+    padding: 15;
+    background-color: red;
+    color: yellow;
+    font-size: 25;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+    margin: 20;
+    border-width: 2;
+    border-color: black;
+}
+
+.changed-styles {
+    padding: 10;
+    font-size: 35;
+    text-decoration: line-through;
+    background-color: blue;
+    color: green;
+    text-align: right;
+}
+
+.default:disabled {
+    opacity: 0.5
+}
+
+StackLayout {
+    horizontal-align: center;
+}
+
+.default {
+    padding: 1;
+    background-color: #def3fd;
+    color: #302b2b;
+    font-size: 18;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+    text-decoration: none;
+    margin: 3;
+    border-color: #def3fd;
+}
+
+.dropdownClass {
+    background-color: #def3fd;
+    color: #302b2b;
+    font-size: 18;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+    text-decoration: none;
+}
+
+.changed-styles {
+    padding: 10;
+    font-size: 35;
+    text-decoration: line-through;
+    background-color: blue;
+    color: green;
+    text-align: right;
+}
+
+DropDown {
+    padding: 2;
+    color: #302b2b;
+    font-size: 18;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+    border-color: #def3fd;
+}
+
+.botom-nav {
+    tab-active-color: green;
+    tab-inactive-color: black;
+    tab-background-color: blue;
+    tab-keyline-color: blue;
+}

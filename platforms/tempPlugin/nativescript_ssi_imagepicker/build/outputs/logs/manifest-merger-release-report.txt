@@ -1,0 +1,35 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_ssi_imagepicker\src\main\AndroidManifest.xml:2:1-4:12
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_ssi_imagepicker\src\main\AndroidManifest.xml:2:1-4:12
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_ssi_imagepicker\src\main\AndroidManifest.xml:2:1-4:12
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_ssi_imagepicker\src\main\AndroidManifest.xml:2:1-4:12
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_ssi_imagepicker\src\main\AndroidManifest.xml:2:1-4:12
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_ssi_imagepicker\src\main\AndroidManifest.xml:2:1-4:12
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_ssi_imagepicker\src\main\AndroidManifest.xml:2:1-4:12
+	package
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_ssi_imagepicker\src\main\AndroidManifest.xml:2:70-125
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_ssi_imagepicker\src\main\AndroidManifest.xml
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_ssi_imagepicker\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_ssi_imagepicker\src\main\AndroidManifest.xml
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_ssi_imagepicker\src\main\AndroidManifest.xml:2:1-4:12
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_ssi_imagepicker\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_ssi_imagepicker\src\main\AndroidManifest.xml
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_ssi_imagepicker\src\main\AndroidManifest.xml:2:1-4:12
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_ssi_imagepicker\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_ssi_imagepicker\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_ssi_imagepicker\src\main\AndroidManifest.xml:3:3-77
+	android:name
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_ssi_imagepicker\src\main\AndroidManifest.xml:3:20-75
+uses-sdk
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_ssi_imagepicker\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_ssi_imagepicker\src\main\AndroidManifest.xml
+INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_ssi_imagepicker\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_ssi_imagepicker\src\main\AndroidManifest.xml
+		ADDED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_ssi_imagepicker\src\main\AndroidManifest.xml
+		INJECTED from E:\CooperSwitch\CooperSwitch\platforms\tempPlugin\nativescript_ssi_imagepicker\src\main\AndroidManifest.xml

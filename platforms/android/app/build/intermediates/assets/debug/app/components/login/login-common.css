@@ -1,0 +1,39 @@
+/* Hide a bunch of things to setup the initial animations */
+.form-controls, .sign-up-stack {
+  opacity: 0;
+}
+
+.background {
+  background-image: url("res://bg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.btn-primary{
+  background-color:#ff9000;
+  height: 55em;
+  font-size: 22px;
+  font-family: "Mont";
+   font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+
+
+
+
+ .border-bottom {
+    border-bottom-width: 1;
+    border-bottom-color: #ffbd67;
+    margin-bottom: 40;
+    padding-bottom: 8;
+    color: white;
+
+  }
+
+TextField{
+  color: white;
+    placeholder-color: rgb(255, 255, 255);;
+}

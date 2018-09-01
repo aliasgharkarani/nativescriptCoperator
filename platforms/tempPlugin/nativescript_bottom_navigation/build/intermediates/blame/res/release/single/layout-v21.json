@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "E:\\CooperSwitch\\CooperSwitch\\platforms\\tempPlugin\\nativescript_bottom_navigation\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\alias\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\342ab39d0cd21311df7df3531eb82c29\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "E:\\CooperSwitch\\CooperSwitch\\platforms\\tempPlugin\\nativescript_bottom_navigation\\build\\intermediates\\res\\merged\\release\\layout-v21\\bottom_navigation_small_item.xml",
+        "source": "C:\\Users\\alias\\.gradle\\caches\\transforms-1\\files-1.1\\ahbottomnavigation-2.1.0.aar\\4d7569a050aac9b5b9ad2df0b4d0fb57\\res\\layout-v21\\bottom_navigation_small_item.xml"
+    },
+    {
+        "merged": "E:\\CooperSwitch\\CooperSwitch\\platforms\\tempPlugin\\nativescript_bottom_navigation\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\alias\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\342ab39d0cd21311df7df3531eb82c29\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "E:\\CooperSwitch\\CooperSwitch\\platforms\\tempPlugin\\nativescript_bottom_navigation\\build\\intermediates\\res\\merged\\release\\layout-v21\\bottom_navigation_item.xml",
+        "source": "C:\\Users\\alias\\.gradle\\caches\\transforms-1\\files-1.1\\ahbottomnavigation-2.1.0.aar\\4d7569a050aac9b5b9ad2df0b4d0fb57\\res\\layout-v21\\bottom_navigation_item.xml"
+    },
+    {
+        "merged": "E:\\CooperSwitch\\CooperSwitch\\platforms\\tempPlugin\\nativescript_bottom_navigation\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\alias\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\342ab39d0cd21311df7df3531eb82c29\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "E:\\CooperSwitch\\CooperSwitch\\platforms\\tempPlugin\\nativescript_bottom_navigation\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\alias\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\342ab39d0cd21311df7df3531eb82c29\\res\\layout-v21\\notification_template_icon_group.xml"
+    }
+]

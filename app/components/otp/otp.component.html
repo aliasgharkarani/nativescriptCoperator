@@ -1,0 +1,87 @@
+<!-- <ActionBar style="background-color:black">
+
+
+    <NavigationButton text="Go Back" col="0" android.systemIcon="ic_menu_back" tap="onNavBtnTap" style="font-size: 12px;"></NavigationButton>
+
+</ActionBar> -->
+
+<!-- <ActionBar title="CooperSwitch" android.icon="res://icon" android.iconVisibility="always"></ActionBar> -->
+
+<GridLayout #background scaleX="1.4" scaleY="1.4" class="background" (loaded)="startBackgroundAnimation(background)"></GridLayout>
+<GridLayout col="1" (tap)="navigateBack()">
+    <Label class="fa" [text]="'fa-arrow-left' | fonticon" horizontalAlignment="left" style=" margin-top:30px; margin-bottom:3px; margin-left:50px; color:white; font-size:20px"></Label>
+
+</GridLayout>
+
+<ScrollView>
+
+
+
+    <StackLayout verticalAlignment="center">
+
+
+
+
+
+
+
+
+        <GridLayout margin="0.1" rows="auto,auto,auto">
+            <GridLayout row="0">
+                <Image src="res://dial" stretch="none" horizontalAlignment="center" class="initial-logo"></Image>
+            </GridLayout>
+
+            <GridLayout row="1" margintop="30" rows="25, 90">
+                <Label row="0" text="Verify Phone Number" class="setPin" horizontalAlignment="center" textWrap="true" style="color: white; font-size: 18;  "></Label>
+                <Label row="1" class="secure text-center" text="Kindly type the verification code sent to {{phoneNumber}} in order to proceed with the registration process" horizontalAlignment="center" textWrap="true" style="color: white; font-size: 14;"></Label>
+            </GridLayout>
+
+            <GridLayout row="2" rows="auto,auto,auto" verticalAlignment="center" class="form" paddingright="50" paddingleft="50">
+
+
+                <GridLayout row="0" rows="auto">
+
+                    <!-- <Label text="Enter Cooper ID" class="label font-weight-bold m-b-5"></Label>
+                <Label class="fa" [text]="'fa-sign-in' | fonticon"></Label> -->
+                    <GridLayout row="0" columns="*" class="input-field">
+
+
+                        <TextField col="1" keyboardType="number" hint="9        8       4       5       6" class="input border-bottom text-center" [(ngModel)]="tpass" style="font-size: 20px;"></TextField>
+                    </GridLayout>
+
+
+                </GridLayout>
+
+                <GridLayout row="1" columns="*" margintop="20">
+                    <Button col="1" class="btn btn-primary w-full loginbutton" text="VERIFY" (tap)="verifyOTP()"></Button>
+                </GridLayout>
+
+                <GridLayout row="2" columns="auto,auto" rows="*" style="margin-top:20px;" horizontalAlignment="center">
+                    <Label row="0" col="0" text="Didn't get notification code?" marginright="8" textWrap="true" style="color:rgb(243, 243, 243); font-size: 13;"></Label>
+                    <Label row="1" col="1" [nsRouterLink]="['/register']" text="Resend" textWrap="true" style="color:white; font-size: 14; font-weight: bold;"></Label>
+
+
+                </GridLayout>
+
+            </GridLayout>
+            <GridLayout row="2" class="form" padding="15">
+
+
+
+
+            </GridLayout>
+
+        </GridLayout>
+
+
+
+        <!-- <StackLayout class="p-20">
+        <Button text="Success" (tap)="showSuccess()" class="btn btn-primary btn-active"></Button>
+        <Button text="Error" (tap)="showError()" class="btn btn-primary btn-active"></Button>
+        <Button text="Custom Image" (tap)="showCustomImage()" class="btn btn-primary btn-active"></Button>
+    </StackLayout> -->
+
+
+    </StackLayout>
+
+</ScrollView>

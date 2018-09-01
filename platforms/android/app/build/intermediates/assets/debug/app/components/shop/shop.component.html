@@ -1,0 +1,220 @@
+<StackLayout>
+
+    <GridLayout class="page">
+
+        <StackLayout style="background-color: #e1e1e1">
+            <ScrollView #myScroller>
+                <GridLayout rows="auto,auto,auto,auto">
+
+                    <GridLayout row="0" rows="auto,auto,auto">
+
+                        <!-- Search -->
+                        <GridLayout row="0" style="background-color: white; padding-left: 0px; margin-left: 0px" elevation="40" margintop="5" borderColor="white" borderWidth="2" borderRadius="5">
+                            <SearchBar hint="Search for  products" (loaded)="sBLoaded($event)" (clear)="onClear($event)" (submit)="onSubmit($event)" style="font-size: 14px;  margin-right: 0px;padding-left: 0px; margin-left: 0px"></SearchBar>
+
+
+                        </GridLayout>
+
+
+
+                        <GridLayout row="1" rows="auto,*, auto" *ngIf="searchedProducts.length > 0">
+                            <GridLayout row="0" columns="*,auto,auto" style="background-color: white; padding: 15px">
+                                <Label textWrap="true" col="0" text="Result(s)" style="color:black; font-family: Arial, Helvetica, sans-serif;" class="label font-weight-bold m-b-5"></Label>
+                                <GridLayout col="1">
+
+                                    <Label class="fa" [text]="'fa-th' | fonticon" horizontalAlignment="center" style=" color:#bdbcbc; font-size:20px; margin-right: 20px"></Label>
+                                </GridLayout>
+
+                                <GridLayout col="2" columns="auto,auto" (tap)="openModal()">
+                                    <Label textWrap="true" col="0" text="Filter" style="color:black; font-family: Arial, Helvetica, sans-serif;" class="label font-weight-bold m-b-5"></Label>
+                                    <Label col="1" class="fa" [text]="'fa-angle-down' | fonticon" horizontalAlignment="center" style=" margin-left:5px; margin-right:20px; color:#bdbcbc; font-size:20px"></Label>
+                                </GridLayout>
+
+                            </GridLayout>
+                            <GridLayout row="2">
+                                <!-- Load   searchedProducts -->
+                                <GridLayout class="page">
+                                    <GridView [items]="searchedProducts" colWidth="49%" rowHeight="270" style="background-color: #e1e1e1">
+                                        <ng-template let-item="item" let-odd="odd">
+                                            <StackLayout margin="2" [nsRouterLink]="['/buy', item._id]" borderColor="white" borderWidth="2" borderRadius="5" verticalAlignment="stretch" class="list-group-item" [class.odd]="odd" style="background-color: #ffffff">
+
+
+
+                                                <Image src="{{productImageUrl}}{{item.productImage}}" style="background-repeat: no-repeat;background-size: contain;border:2px solid #021a40"></Image>
+                                                <Label textWrap="true" [text]="item.productName" style="color:black;padding-left:4px" class="label font-weight-bold" textWrap="true"></Label>
+                                                <Label textWrap="true" [text]="item.price | currency:'NGN':'symbol-narrow':'4.2-2'" style="color:black;padding-left:4px" class="label font-weight-bold" textWrap="true"></Label>
+
+
+
+                                            </StackLayout>
+                                        </ng-template>
+                                    </GridView>
+                                </GridLayout>
+                            </GridLayout>
+                            <GridLayout row="3">
+                                <!-- load more -->
+                            </GridLayout>
+
+
+                        </GridLayout>
+
+
+                    </GridLayout>
+
+
+                    <GridLayout row="1">
+                        <Carousel #carousel height="150"></Carousel>
+                    </GridLayout>
+
+                    <GridLayout row="2" rows="auto, *" width="100%" xmlns:card="nativescript-cardview">
+                        <Label row="0" marginLeft="20px" text="Sponsored List" style="color:black; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif" class="label font-weight-bold "></Label>
+
+
+                        <GridLayout row="1">
+
+                            <GridView [items]="sponsorproducts" colWidth="33%" rowHeight="120">
+
+
+                                <ng-template let-item="item" let-odd="odd">
+                                    <StackLayout col="0" style="background-color: white" marginright="5" elevation="40" margintop="5" borderColor="white" borderWidth="2" borderRadius="5" [nsRouterLink]="['/buy', item.product._id]" verticalAlignment="stretch">
+
+                                        <GridLayout rows="80, 40">
+
+
+                                            <Image row="0" src="{{productImageUrl}}{{item.product.productImage}}" style="background-repeat: no-repeat;background-size: contain;border:2px solid #021a40
+                                                    "></Image>
+                                            <Label textWrap="true" row="1" marginLeft="20px" [text]="item.product.productName" style="color:black; font-family: Arial, Helvetica, sans-serif;" class="label font-weight-bold m-b-5"></Label>
+
+                                        </GridLayout>
+
+
+                                    </StackLayout>
+                                </ng-template>
+
+
+                            </GridView>
+
+
+                        </GridLayout>
+                    </GridLayout>
+
+                    <GridLayout row="3" rows="auto,auto">
+                        <Label row="0" marginLeft="20px" marginTop="3" text="Categories" style="color:black; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" class="label font-weight-bold "></Label>
+
+                        <GridLayout row="1" width="100%" xmlns:card="nativescript-cardview">
+                            <GridView [items]="categories" colWidth="50%" rowHeight="200">
+                                <card:cardview>
+                                    <ng-template let-item="item" let-odd="odd">
+                                        <StackLayout marginright="5" style.backgroundcolor="lightgray" elevation="40" margintop="5" [nsRouterLink]="['/buy', item._id]" borderColor="white" borderWidth="2" borderRadius="5" verticalAlignment="stretch" class="list-group-item" [class.odd]="odd">
+
+                                            <GridLayout rows="160, 40" style="background-color: #ffffff">
+
+                                                <Image row="0" src="{{productImageUrl}}{{item.imagePath}}" style="padding-top:7px; background-repeat: no-repeat;background-size: cover;border:2px solid #021a40
+                                                                            "></Image>
+                                                <Label textWrap="true" row="1" [text]="item.categoryName" style="color: black; font-weight: bold ; text-align: center;"></Label>
+
+
+                                            </GridLayout>
+
+                                        </StackLayout>
+                                    </ng-template>
+                                </card:cardview>
+                            </GridView>
+                        </GridLayout>
+                    </GridLayout>
+
+
+
+
+
+
+                </GridLayout>
+            </ScrollView>
+
+        </StackLayout>
+        <StackLayout [style.zIndex]="999" modal size="md" alignment="middle" [dismissable]="true" [duration]="100" (open)="onOpenModal()" (close)="onCloseModal()">
+
+
+
+            <StackLayout borderRadius="3" rows="*, auto" class="p-t-15 bg-white" style=" background-color: white">
+
+                <GridLayout rows="auto,auto,auto">
+
+                    <GridLayout row="0" rows="auto,auto">
+                        <GridLayout row="0" class="p-x-30 p-y-5" rows="auto" columns="auto, *" (tap)="onTap();">
+                            <GridLayout col="0" width="32" height="32" class="p-5 m-y-5 img-circle border-info">
+                                <Label class="m-y-auto text-center text-info" fontSize="16" text="C"></Label>
+                            </GridLayout>
+                            <Label col="1" class="m-l-15 m-y-auto text-left text-dark" fontSize="" text="Categories"></Label>
+                        </GridLayout>
+
+                        <GridLayout row="1" width="100%" xmlns:card="nativescript-cardview">
+                            <GridView [items]="categories" colWidth="100%" rowHeight="200">
+                                <card:cardview>
+                                    <ng-template let-item="item" let-odd="odd">
+                                        <StackLayout marginright="5" style.backgroundcolor="lightgray" elevation="40" margintop="5" (tap)="getProductByCategoryId(item._id)" borderColor="white" borderWidth="2" borderRadius="5" verticalAlignment="stretch" class="list-group-item" [class.odd]="odd">
+
+                                            <GridLayout columns="120, *" style="background-color: #ffffff">
+
+                                                <Image col="0" src="{{productImageUrl}}{{item.imagePath}}" style="padding-top:7px; background-repeat: no-repeat;border:2px solid #021a40"></Image>
+                                                <Label textWrap="true" col="1" [text]="item.categoryName" style="color: black; font-weight: bold ; text-align: center;"></Label>
+
+
+                                            </GridLayout>
+
+                                        </StackLayout>
+                                    </ng-template>
+                                </card:cardview>
+                            </GridView>
+                        </GridLayout>
+
+                    </GridLayout>
+                </GridLayout>
+
+
+
+
+
+                <GridLayout class="p-x-30 p-y-5" rows="auto" columns="auto, *" (tap)="onTap();">
+                    <GridLayout col="0" width="32" height="32" class="p-5 m-y-5 img-circle border-danger">
+                        <Label class="m-y-auto text-center text-danger" fontSize="16" text="D"></Label>
+                    </GridLayout>
+                    <Label col="1" class="m-l-15 m-y-auto text-left text-dark" fontSize="" text="Danger"></Label>
+                </GridLayout>
+
+                <GridLayout class="p-x-30 p-y-5" rows="auto" columns="auto, *" (tap)="onTap();">
+                    <GridLayout col="0" width="32" height="32" class="p-5 m-y-5 img-circle border-primary">
+                        <Label class="m-y-auto text-center text-primary" fontSize="16" text="P"></Label>
+                    </GridLayout>
+                    <Label col="1" class="m-l-15 m-y-auto text-left text-dark" fontSize="" text="Primary"></Label>
+                </GridLayout>
+
+                <GridLayout class="p-x-30 p-y-5" rows="auto" columns="auto, *" (tap)="onTap();">
+                    <GridLayout col="0" width="32" height="32" class="p-5 m-y-5 img-circle border-warning">
+                        <Label class="m-y-auto text-center text-warning" fontSize="16" text="W"></Label>
+                    </GridLayout>
+                    <Label col="1" class="m-l-15 m-y-auto text-left text-dark" fontSize="" text="Warning"></Label>
+                </GridLayout>
+
+                <GridLayout class="p-x-30 p-y-5" rows="auto" columns="auto, *" (tap)="onTap();">
+                    <GridLayout col="0" width="32" height="32" class="p-5 m-y-5 img-circle border-success">
+                        <Label class="m-y-auto text-center text-success" fontSize="16" text="S"></Label>
+                    </GridLayout>
+                    <Label col="1" class="m-l-15 m-y-auto text-left text-dark" fontSize="" text="Success"></Label>
+                </GridLayout>
+
+                <Label text="One color to rule them all" textWrap="true" class="text-muted p-x-30 p-y-5"></Label>
+
+                <WrapLayout class="m-y-2 m-r-15 pull-right">
+                    <Label (tap)="closeModal()" text="CANCEL" class="m-y-10 p-10 text-warning"></Label>
+                </WrapLayout>
+
+
+            </StackLayout>
+        </StackLayout>
+    </GridLayout>
+
+
+
+
+</StackLayout>

@@ -1,0 +1,74 @@
+{
+  "_from": "nativescript-ng2-carousel",
+  "_id": "nativescript-ng2-carousel@0.0.5",
+  "_inBundle": false,
+  "_integrity": "sha1-6hkb/ksJ5uPh3/KQ5pCTLVlTKzg=",
+  "_location": "/nativescript-ng2-carousel",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "nativescript-ng2-carousel",
+    "name": "nativescript-ng2-carousel",
+    "escapedName": "nativescript-ng2-carousel",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-ng2-carousel/-/nativescript-ng2-carousel-0.0.5.tgz",
+  "_shasum": "ea191bfe4b09e6e3e1dff290e690932d59532b38",
+  "_spec": "nativescript-ng2-carousel",
+  "_where": "C:\\Cooper\\CooperSwitch",
+  "author": {
+    "name": "Manel Alcoceba",
+    "email": "manelalcoceba@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/alcoceba/ngCarouselDirective/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A simple NativeScript + Angular 2 images carousel for iOS and Android",
+  "homepage": "https://github.com/alcoceba/ngCarouselDirective#readme",
+  "keywords": [
+    "angular",
+    "nativescript",
+    "carousel",
+    "images",
+    "slides",
+    "slide",
+    "angular",
+    "angular2",
+    "ng",
+    "ng2",
+    "typescript"
+  ],
+  "license": "MIT",
+  "main": "nativescript-ng2-carousel",
+  "name": "nativescript-ng2-carousel",
+  "nativescript": {
+    "platforms": {
+      "android": "3.1.0",
+      "ios": "3.1.0"
+    },
+    "plugin": {
+      "nan": "true",
+      "pan": "false",
+      "core3": "true",
+      "category": "Interface"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alcoceba/ngCarouselDirective.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "typings": "nativescript-ng2-carousel.ts",
+  "version": "0.0.5"
+}

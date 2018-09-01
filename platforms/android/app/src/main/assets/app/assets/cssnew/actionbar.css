@@ -1,0 +1,15 @@
+.actionbar {
+    background-color: #6c6c6c;
+    color: rgb(254, 204, 22);
+    border-width: 1;
+    border-color: transparent;
+}
+
+.actionbar-title {
+    text-align: center;
+    padding-right: 5;
+    color: rgb(254, 204, 22);
+    font-weight: bold;
+    font-size: 20;
+    font-family: "Geomanist-Regular", "Geomanist", calibri, helvetica, sans-serif;
+}

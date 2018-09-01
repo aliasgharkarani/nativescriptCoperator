@@ -1,0 +1,15 @@
+.fa {
+  font-family: FontAwesome, fontawesome-webfont;
+  font-size: 22;
+  color: rgb(16, 46, 130);
+}
+
+.fa-actionbar {
+  color: rgb(254, 204, 22);
+}
+
+.fa-icon {
+  font-size: 45;
+  /* padding-right: 20; */
+  color: rgb(16, 46, 130);
+}

@@ -1,0 +1,78 @@
+<ActionBar title="MACRO STATIION" style="background-color:black;">
+
+    <GridLayout>
+        <GridLayout columns="*,auto,auto">
+
+
+            <GridLayout col="2">
+                <Label class="fa" [text]="'fa-bell' | fonticon" horizontalAlignment="right" style=" margin-top:30px; margin-bottom:3px; margin-right:35px; color:white; font-size:20px"></Label>
+
+            </GridLayout>
+        </GridLayout>
+    </GridLayout>
+</ActionBar>
+
+
+<Label textWrap="true" visibility="collapse" horizontalAlignment="left" [text]="products[0].product.productBriefDesc" class="h3 description-label"></Label>
+
+<StackLayout>
+
+    <GridLayout rows="40,*">
+        <Stacklayout row="0" style=" background-color:#e3e7ea; padding: 10px">
+            <GridLayout columns="*" rows="auto">
+                <Label textWrap="true" col="0" row="0" horizontalAlignment="left" [text]="category.categoryName" class="h3 description-label" style="color:black"></Label>
+                <Label textWrap="true" col="1" row="0" [nsRouterLink]="['/addnewproduct']" class="fa" [text]="'fa-plus' | fonticon" horizontalAlignment="right" style="  margin-bottom:3px; margin-right:35px; color:goldenrod; font-size:30px"></Label>
+
+            </GridLayout>
+
+        </Stacklayout>
+        <!-- <StackLayout *ngFor="let item of products ">
+                <Label textWrap="true" horizontalAlignment="left" [text]="item.product.productBriefDesc" class="h3 description-label"></Label>
+            </StackLayout> -->
+        <GridLayout row="1" visibility="{{products.length > 0 ? 'visible' : 'collapse'}}">
+
+            <ListView [items]="products" class="list-group">
+                <ng-template let-dataitem="item" let-i="index">
+                    <StackLayout class="layout-style">
+
+                        <StackLayout>
+
+                            <GridLayout columns="110,*">
+                                <Image col="0" class="avatar avatar--largeCircle" src="{{productImageUrl}}{{dataitem.product.productImage}}"></Image>
+                                <StackLayout col="1" style="padding-left:10px" rows="auto,auto,auto">
+
+                                    <GridLayout row="0">
+                                        <Label textWrap="true" horizontalAlignment="left" [text]="dataitem.product.productBriefDesc" class="h3 description-label" style="color:black"></Label>
+                                        <Label textWrap="true" horizontalAlignment="left" [text]="dataitem.product.amount | currency:'NGN':'symbol-narrow':'4.2-2'" class="h3 description-label" style="font-weight:bold; color:black"></Label>
+
+                                    </GridLayout>
+                                    <GridLayout row="1" columns="auto,auto" style="color:#65bd77">
+                                        <Label textWrap="true" col="0" horizontalAlignment="left" text="Qty Available" class="h3 description-label" style="color:#65bd77"></Label>
+                                        <Label textWrap="true" col="1" horizontalAlignment="right" [text]="dataitem.product.quantity" class="h3 description-label" style="font-weight:bold;padding-left:5px;color:#65bd77"></Label>
+
+                                    </GridLayout>
+                                    <GridLayout row="2" columns="auto,auto" style="color:#EF473A">
+                                        <Label textWrap="true" col="0" horizontalAlignment="left" text="Qty Sold" class="h3 description-label" style="color:#EF473A"></Label>
+                                        <Label textWrap="true" col="1" horizontalAlignment="right" [text]="dataitem.product.quantitySold" class="h3 description-label" style="font-weight:bold;color:#EF473A"></Label>
+
+                                    </GridLayout>
+
+
+                                </StackLayout>
+                            </GridLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                </ng-template>
+            </ListView>
+            <!-- <ListView row="0" [items]="products" class="list-group">
+                    <ng-template let-dataitem="item" let-i="index">
+                        <Label textWrap="true" horizontalAlignment="left" [text]="dataitem.product.productBriefDesc" class="h3 description-label"></Label>
+                    </ng-template>
+                </ListView> -->
+        </GridLayout>
+    </GridLayout>
+
+
+
+</StackLayout>

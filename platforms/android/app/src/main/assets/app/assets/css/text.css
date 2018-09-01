@@ -1,0 +1,59 @@
+.header {
+  font-size: 18;
+  color: rgb(26, 60, 138);
+  margin: 0 0 10 0;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 18;
+  font-family: "Geomanist-Regular", "Geomanist";
+  color: rgb(26, 60, 138);
+  margin: 0 0 10 0;
+}
+
+.text-header {
+  font-size: 18;
+  font-family: "Geomanist-Regular", "Geomanist";
+  color: rgb(26, 60, 138);
+  font-weight: bold;
+  margin: 0 0 2 0;
+}
+
+.text-question {
+  font-size: 18;
+  font-family: "Geomanist-Regular", "Geomanist";
+  color: rgb(26, 60, 138);
+  font-weight: bold;
+}
+
+.text-input {
+  font-size: 16;
+  font-family: "Geomanist-Regular", "Geomanist";
+  color: rgb(26, 60, 138);
+  border-width: 1;
+  border-color: rgb(254, 204, 22);
+  border-radius: 5;
+  margin: 10 0 10 0;
+  padding: 0 0 0 10;
+  height: 34;
+}
+
+.text-area {
+  font-size: 16;
+  font-family: "Geomanist-Regular", "Geomanist";
+  color: rgb(26, 60, 138);
+  border-width: 1;
+  border-color: rgb(254, 204, 22);
+  border-radius: 5;
+  margin: 10 0 10 0;
+  padding: 10 0 0 5;
+  height: 150;
+}
+
+.hr {
+  height: 1;
+  border-bottom-width: 1;
+  border-bottom-color: rgb(254, 204, 22);
+  margin: 5 0 15 0;
+}

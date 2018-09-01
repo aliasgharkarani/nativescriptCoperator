@@ -1,0 +1,49 @@
+<ActionBar title="Verify Number" style="background-color:black">
+
+</ActionBar>
+
+
+<GridLayout #background scaleX="1.0" scaleY="1.0" class="background"></GridLayout>
+
+<ScrollView>
+
+    <StackLayout margin="20" verticalAlignment="top">
+        <StackLayout class="form" padding="5">
+            <StackLayout class="input-field">
+                <!-- <Label text="Enter Staff ID" class="label font-weight-bold m-b-5"></Label> -->
+                <Label (tap)="goBack()" text="Please enter your mobile number for verification" style="color:black" class="Label"></Label>
+
+            </StackLayout>
+
+
+
+
+
+        </StackLayout>
+
+        <StackLayout class="form" padding="5">
+
+
+            <StackLayout class="input-field">
+                <!-- <Label text="Enter Staff ID" class="label font-weight-bold m-b-5"></Label> -->
+                <GridLayout columns="80, *, auto" rows="auto, *" style="width:100%;height:130%">
+                    <Label col="0" row="0" (tap)="goBack()" text="NG +234  " class="Label"></Label>
+                    <TextField col="1" row="0" text="9085365906" style="color:#d08110" class="input" [(ngModel)]="phoneNumber" [editable]="isedit"></TextField>
+
+                    <Label col="2" visibility="{{isedit ? 'collapse' : 'visible'}}" class="fa" [text]="'fa-pencil' | fonticon" horizontalAlignment="right" (tap)="enablePhoneText()" style="font-size:20px"></Label>
+                    <Label col="2" visibility="{{isedit ? 'visible' : 'collapse'}}" class="fa" [text]="'fa-lock' | fonticon" horizontalAlignment="right" (tap)="enablePhoneText()" style="font-size:20px"></Label>
+                </GridLayout>
+            </StackLayout>
+
+
+
+
+
+            <Button class="btn btn-primary" text="Send Verification Code" (tap)="sendcode()"></Button>
+
+        </StackLayout>
+    </StackLayout>
+
+
+
+</ScrollView>

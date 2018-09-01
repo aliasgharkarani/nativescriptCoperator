@@ -1,0 +1,95 @@
+<ActionBar style="background-color:black">
+
+
+    <NavigationButton text="Go Back" col="0" android.systemIcon="ic_menu_back" (tap)="navigateBack()"></NavigationButton>
+
+    <GridLayout row="0" columns="*,auto,auto">
+
+        <GridLayout col="1">
+            <Label class="fa" [text]="'fa-bell' | fonticon" horizontalAlignment="right" style=" margin-top:30px; margin-bottom:3px; margin-right:35px; color:white; font-size:20px"></Label>
+
+        </GridLayout>
+        <GridLayout col="2">
+            <Label class="fa" [text]="'fa-cart-plus' | fonticon" horizontalAlignment="right" style=" margin-top:30px; margin-bottom:3px; margin-right:35px; color:white; font-size:20px"></Label>
+            <!-- <Label class="fa" text="{{ fonticon('fa-cart-plus') + '3' }}" ></Label> -->
+
+
+        </GridLayout>
+    </GridLayout>
+</ActionBar>
+
+
+
+
+
+
+
+<GridLayout rows="auto,*,auto" (touch)="onTouch($event)">
+
+
+    <StackLayout row="0" class="select-style">
+
+        <CheckBox #elem checked="{{isSelectAll}}" fillColor="#d08110" text="Select all items" horizontalAlignment="left" style="font-weight:bold" (checkedChange)="productcheckedAllChange(elem)"></CheckBox>
+
+
+    </StackLayout>
+
+
+    <StackLayout row="1">
+
+        <!-- >> listview-customize-html -->
+
+        <ListView [items]="cartProducts" class="list-group">
+            <ng-template let-dataitem="item" let-i="index">
+                <StackLayout class="layout-style">
+                    <CheckBox #elem checked="{{dataitem.isSelected}}" fillColor="#d08110" [text]="dataitem.productName" (checkedChange)="productcheckedChange(elem, dataitem)"></CheckBox>
+                    <StackLayout>
+
+                        <GridLayout columns="110,*">
+                            <Image col="0" class="avatar avatar--largeCircle" src="{{productImageUrl}}{{dataitem.productImage}}"></Image>
+                            <StackLayout col="1" style="padding-left:10px">
+                                <Label textWrap="true" horizontalAlignment="left" [text]="dataitem.productBriefDesc" class="h3 description-label"></Label>
+                                <Label textWrap="true" horizontalAlignment="left" [text]="dataitem.amount | currency:'NGN':'symbol-narrow':'4.2-2'" class="h3 description-label" style="font-weight:bold"></Label>
+
+                                <GridLayout columns="auto,60,*">
+                                    <Label col="0" textWrap="true" horizontalAlignment="left" marginTop="5" marginRight="15" [text]="dataitem.qty" class="h5 description-label"></Label>
+                                    <DropDown col="1" #dd [items]="dataitem.qtyList" [(ngModel)]="dataitem.selectedQtyIndex" hint="" (selectedIndexChanged)="onqtychange($event,dataitem)" style="font-size:14px;padding:25px "></DropDown>
+                                    <GridLayout col="2" (tap)="removefromCart(dataitem)">
+
+                                        <Label class="fa" [text]="'fa-trash-o' | fonticon" horizontalAlignment="right" style=" color:red; font-size:20px;margin-right:40px"></Label>
+
+                                        <!-- <DropDown #dd [items]="cooperativeList" [(ngModel)]="selectedCooperativeIndex" [hint]="hint" (selectedIndexChanged)="oncooperativechange($event)" style="font-size:14px; "></DropDown> -->
+
+                                    </GridLayout>
+                                </GridLayout>
+
+                            </StackLayout>
+                        </GridLayout>
+                    </StackLayout>
+                </StackLayout>
+
+            </ng-template>
+        </ListView>
+        <!-- << listview-customize-html -->
+
+    </StackLayout>
+
+
+
+    <StackLayout row="2">
+
+        <GridLayout columns="auto,auto">
+            <Label col="0" textWrap="true" marginLeft="10" marginRight="30" style="margin-top:40px;" text="Total {{totalSelectedAmount | currency:'NGN':'symbol-narrow':'4.2-2' }}" class="h3 description-label" style="font-weight:bold;"></Label>
+            <Button col="1" class="btn btn-primary w-full" width="200" text="Check Out ({{totalSelectedItem}})" [nsRouterLink]="['/pay']"></Button>
+
+        </GridLayout>
+
+
+
+
+    </StackLayout>
+
+
+
+
+</GridLayout>

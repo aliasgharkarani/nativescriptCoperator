@@ -1,0 +1,40 @@
+/* Hide a bunch of things to setup the initial animations */
+.form-controls, .sign-up-stack {
+  opacity: 0;
+}
+
+.background {
+  background-image: url("res://landbg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.btn-secondary{
+  font-size: 14px;
+  font-family: "Mont";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  height: 40em;
+  width: 40%;
+  border-width: 1;
+    border-color: white;
+}
+
+.btn-danger{
+  font-size: 14px;
+  font-family: "Mont";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  border-style: solid;
+  border-bottom-color: white;
+  background-color: #FF1717;
+  height: 50em;
+  width: 40%;
+ 
+}
